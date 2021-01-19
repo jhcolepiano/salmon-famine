@@ -1,0 +1,42 @@
+***Prioritized Feature List for Case of the Salmon Famine*** 
+
+-Map: 
+	-with icons (divs); 
+	-that display when you complete levels (start with City Hall) at the same time as the next question;
+	-link icons to Level <h2>;
+	-add link back to map at the bottom of each .clue <div>;
+-Add clues:
+	-add photo card for each suspect;
+-Resolve cookies alerts:
+	-"Access to XMLHttpRequest at 
+	'https://googleads.g.doubleclick.net/pagead/id' from origin 
+	'https://www.youtube-nocookie.com' has been blocked by CORS policy: 
+	No 'Access-Control-Allow-Origin' header is present on the requested resource."; 
+	-"Failed to load resource: net::ERR_FAILED (googleads.g.doubleclick.net/pagead/id:1)"; 
+-Upload on GitHub and GitPages, link to my Portfolio;
+-Feedback button for users to identify bugs and suggest new features;
+-UX: 
+	-Make H3 of Clue div show up at the same Y as the submit button (use getBoundingClientRect());
+	-Toggle buttons to display Objective, Standards, Disclaimer and Directions;
+-Photos:
+	-pretty background (animated stream like on Google Forms?);
+	-photos to go with questions; 
+	-photos to go with clues; 
+-Get feedback, usability testing;
+-Intro:
+	-video? voice-over? text?;
+-Further CSS Styling:
+	-Unique font?;
+	-Color pallette;
+-Responsive:
+	-Test and optimize for cell phone;
+-Email results:
+	-Or hook up to Google classroom or another LMS??;
+-Add tutorials/help links (in new tab)
+	-Lvl 5 explain levels of consumers with Scrambled Eggs Super challenge;
+	-Lvl 8 step by step with voice-over;
+-Extras:
+	-Sound effects? (correct answer sound?);
+	-Animations?; 
+	-Switch color button for highlighter on Lvl 8;
+	-Drag and drop somewhere? Like drag your person onto the map?;

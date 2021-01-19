@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Case of the Salmon Famine</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--An ecological mystery--solve ecological riddles
+    correctly to earn points-->
+    <header>
+        <h1 class="title">The Case of the Salmon Famine</h1>
+        <h2 class="subtitle">An Ecological Mystery</h3>
+    </header>
+    <!--Goals and Standards:-->
+    <div class="standards" id="objective">
+        <h4>Objective</h4>
+        <p>The learner will use evidence of interdependence to 
+        predict how changes in a community may affect other 
+        organisms in the community.</p>
+    </div>   
+    <div class="standards" id="standardsDiv">
+        <h4>Next Generation Science Standards</h4>
+        <h5 id="collapseStandards"><a href="">(Collapse)</a></h5>
+        <h5 id="expandStandards"><a href="">(Expand)</a></h5>
+        <ul id="standardsList">
+            <li><a href="https://www.nextgenscience.org/pe/5-ps3-1-energy" 
+            target=" " class="standards code">5-PS3-1.</a> Use models to describe that energy in animals’ 
+            food (used for body repair, growth, motion, and to maintain body
+            warmth) was once energy from the sun. </li>
+            
+            <li><a href="https://www.nextgenscience.org/pe/5-ls2-1-ecosystems-interactions-energy-and-dynamics" 
+                target=" " class="standards code">5-LS2-2.</a> 	Develop a model to describe the movement of 
+                matter among plants, animals, decomposers, and the environment.</li>
+        
+            <li><a href="https://www.nextgenscience.org/pe/ms-ls2-1-ecosystems-interactions-energy-and-dynamics" 
+                target=" " class="standards code">MS-LS2-1.</a> Analyze and interpret data to provide evidence 
+                for the effects of resource availability on organisms and populations of organisms in an ecosystem.</li>
+        
+            <li><a href="https://www.nextgenscience.org/pe/ms-ls2-2-ecosystems-interactions-energy-and-dynamics" 
+                target=" " class="standards code">MS-LS2-2.</a> Construct an explanation that predicts patterns of 
+                interactions among organisms across multiple ecosystems.</li>
+
+            <li><a href="https://www.nextgenscience.org/pe/ms-ls2-3-ecosystems-interactions-energy-and-dynamics" 
+                target=" " class="standards code">MS-LS2-3.</a> Develop a model to describe the cycling of matter 
+                and flow of energy among living and nonliving parts of an ecosystem.</li>
+
+            <li><a href="https://www.nextgenscience.org/pe/ms-ls2-4-ecosystems-interactions-energy-and-dynamics" 
+                target=" " class="standards code">MS-LS2-4.</a> Construct an argument supported by empirical 
+                evidence that changes to physical or biological components of an ecosystem affect populations.</li>
+        
+        </ul>    
+    </div>
+
+    <!--Mystery description-->
+    <div class="directions">
+        <h4>Disclaimer</h4>
+        <p id="disclaimer"> This form and all associated materials constitute a work of fiction produced 
+            for educational purposes by Heather Cole. Places, photos and names are used fictitiously 
+            and any similarity to actual persons, places and events is coincidental. I do not own and 
+            claim no copyright over the photographs which are used here for purposes of teaching in 
+            accordance with "fair use." If you wish to use these materials for purposes which 
+            go beyond fair use, you will need to ask permission of the copyright owner.
+        </p>        
+        <h4>Directions</h4>
+        <p>Solving these riddles correctly will earn you more clues on your map to help solve the case
+            of the salmon famine! The answers to the riddles themselves are clues in their own way! 
+            Stay alert and look closely.
+        </p> 
+
+    </div> 
+
+    <!--Navigation: Links to each question via suspect/location photos? -->
+    <!--question 1-->
+    <div class=level>
+        <h2>LEVEL 1:</h2>
+    </div>
+    <div class="question" id="q1Container">
+        <form>
+            <label for="answer1">
+                I produce food every day, just like a factory. <br>
+                I make it from components that consumers can't see. <br>               
+                In the woods, most everybody else eats <em>me</em>! <br>
+                The trunk of the food chain: What am I? I'm a  
+            </label>           
+            <input type="text" id="answer1" name="tree" 
+            placeholder="???" size= "8" required 
+            pattern="[Tt]rees?" title="Hint: it rhymes!"> 
+            <input type="submit" value="Check My Answer!" id="q1Button">
+        </form>
+     </div>
+     <!--clue 1: does not display until correct answer is given-->
+     <div class="clue" id="clue1Container">
+        <h3>Great Job!</h3>
+        <p>Although producers don't eat, they do make food for everyone else! <br>
+            <em>Keep this in mind as you're sleuthing: Each riddle's solution 
+            is a hint for the overall mystery.</em>
+        </p>
+     </div>
+    <br>
+    <br>
+
+    <!--question 2-->
+    <div class=level>
+        <h2>LEVEL 2:</h2>
+    </div>
+    <div class="question" id="q2Container">
+        <form>
+            <label for="answer2">
+                We may not seem as pleasant as a fragrant red rose, <br>
+                But our efforts are part of the reason it grows. <br>               
+                It's just respiration! Don't turn up your nose. <br>
+                What do we do? We help   
+            </label>           
+            <input type="text" id="answer2" name="decompose" 
+            placeholder="???" size= "12" required 
+            pattern="[Dd]ecomposer?s?" title="Hint: it rhymes!"> 
+            <input type="submit" value="Check My Answer!" id="q2Button">
+        </form>
+    </div>
+    <!--clue 2: does not display until correct answer is given-->
+    <div class="clue" id="clue2Container">
+        <h3>Nice Work!</h3>
+        <p>Decomposers help return nutrients to the soil so that plants can use them
+            again to build their bodies. <br>
+            <em>Keep this in mind as you're examining the evidence!</em>
+        </p>
+    </div>
+    <br>
+    <br>
+    <!--question 3-->
+    <div class=level>
+        <h2>LEVEL 3:</h2>
+    </div>
+    <div class="question" id="q3Container">
+        <form>
+            <label for="answer3">
+                They get it from the the sun or deep vents in the sea. <br>
+                In any case, all ecosystems need   
+            </label>           
+            <input type="text" id="answer3" name="energy" 
+            placeholder="???" size= "8" required 
+            pattern="[Ee]nergy" title="Hint: it rhymes!"> 
+            <input type="submit" value="Check My Answer!" id="q3Button">
+        </form>
+     </div>
+    <!--clue 3: does not display until correct answer is given-->
+    <div class="clue" id="clue3Container">
+        <h3>Right On!</h3>
+        <p>The energy in most ecosystems comes from the sun and 
+            must be captured by plants. An organism uses most of that energy, 
+            which then ends up as heat in the environment. Around 10% that isn't 
+            used (and turned into heat) is stored in the organism's body and
+            passes on up the food chain until there's no stored energy left. <br>
+            <em>Keep this in mind as you're examining the evidence!</em></p>
+    </div>     
+    <br>
+    <br>    
+    <!--question 4-->
+    <div class=level>
+        <h2>LEVEL 4:</h2>
+    </div>
+    <div class="question" id="q4Container">
+        <form>
+            <p>
+                Now that we know you solve riddles so well, <br>
+                <em>Find</em> an <strong>omnivore</strong> that competes with a gazelle!  
+            </p>         
+            <label for="answer4" class="tip">
+                Find the omnivore below OR type its name here:
+            </label>           
+            <input type="text" id="answer4" name="rat" 
+            placeholder="???" size= "8" required
+            pattern="[Rr]ats?" title="Type the name of the omnivore from the
+            food chain below OR click it in the image below.">
+            <input type="submit" value="Check My Answer!" id="q4Button">
+        </form>
+        <div class="imageWrapper" id="q4ImageWrapper">
+            <!--Button overlays on top of rat-->
+            <div class="transparent link button" id="ratButton"></div>
+            <img src="assets/Find an Omnivore.png" id="q4Image" title="Savannah Food Web" 
+            alt="A savannah food web. Arrows show the direction that energy transfers in the community. 
+            In the food web, read from left to right and bottom to top,
+            star grass provides energy to beetle and zebra. Oat grass provides
+            energy to beetle, rat, zebra and gazelle. Acacia tree provides energy
+            to giraffe. Beetle provides energy to rat and mongoose. Rat provides energy
+            to mongoose. Zebra provides energy to cheetah and lion. Gazelle provides
+            energy to lion. Giraffe provides energy to lion. Mongoose provides energy 
+            to cheetah.">
+        </div>
+    </div>
+        <!--clue 4: does not display until correct answer is given-->
+        <div class="clue" id="clue4Container">
+            <h3>Well Done!</h3>
+            <p>If two species compete over a third (food species),
+                all three populations will be affected by a change in any 
+                one of them... <br>
+                <em>Keep this in mind as you're examining the evidence!</em>
+            </p>
+        </div>
+    <br>
+    <br> 
+
+    <!--question 5-->
+    <div class=level>
+        <h2>LEVEL 5:</h2>
+    </div>
+    <div class="question" id="q5Container">
+        <form>
+            <label for="answer5">
+                For this riddle, use the food chain to <em>spell out a word</em>: <br>
+                SEED  →  BUG  →  MOUSE  →  SNAKE  →  NOCTURNAL BIRD <br>
+                First take the <em>third</em> letter of a word that means "third." <br>
+                Add the <em>second</em> letter of the primary consumer. <br>
+                Then add the <em>first</em> letter of the carnivorous loomer. <br>
+                "Owl" bet you know just what to <em>do</em> with this rumor! <br>                   
+            </label>           
+            <input type="text" id="answer5" name="run" 
+            placeholder="???" size= "1" required 
+            pattern="[Rr][Uu][Nn]" title="Your answer should be a three letter verb.">
+            <input type="submit" value="Check My Answer!" id="q5Button">            
+        </form>
+    </div>
+    <!--clue 5: does not display until correct answer is given-->
+    <div class="clue" id="clue5Container">
+        <h3>Way to Go!</h3>
+        <p>Salmon can't run, but they can hide! <br>
+            Actually, a <em>salmon run</em>--the migration of salmon up a river from the ocean so 
+            that they can spawn--is all about giving the next generation the best 
+            chance of <em>hiding</em> from predators. Alevin or "sac fry" (newly hatched salmon) hide in the 
+            stream gravel for protection, feeding off the remainder of their yolk until they can fend
+            for themselves.<br>
+            <em>Be sure to watch how energy and matter move as you're examining 
+                the evidence!</em>
+        </p>
+    </div>
+    <br>
+    <br>    
+    <!--question 6-->
+    <div class=level>
+        <h2>LEVEL 6:</h2>
+    </div>
+    <div class="question" id="q6Container">
+        <p>On treasure maps I mark the spot, <br>
+            On tests, I mark what's wrong. <br>
+            In this food web, I'm doing both: <br>
+            Which arrows don't belong?? <br>
+        </p>
+        <form>
+            <label for="answer6" class="tip">
+                <em>Find me in the image below! If you cannot use the image,  
+                    type the answer to the question in the image "alt tag" here:
+                </em>
+            </label>           
+            <input type="text" id="answer6" name="arrow3" 
+            placeholder="???" size= "8" required
+            pattern="3" title="Please type just the number.">
+            <input type="submit"  value="Check My Answer!" id="q6Button"> 
+        </form>
+
+        <div class="imageWrapper" id="q6ImageWrapper">
+            <!--Button overlays on top of X between bird, caterpillar, mouse and grasshopper-->
+            <div class="transparent link button" id="xButton"></div>
+            <img src="assets/x-marks-spot.jpg" id="q6Image" title="A forest food web" 
+            alt="A forest food web with many crossing arrows. Which numbered arrow 
+            is incorrect: Arrow 1 goes from flowers to grasshopper.
+            Arrow 2 goes from grasshopper to bird. 
+            Arrow 3 goes from bird to caterpillar.
+            Arrow 4 goes from rat to mosquito.">
+        </div>
+    </div>
+    <!--clue 6: does not display until correct answer is given-->
+    <div class="clue" id="clue6Container">
+        <h3>That's It!</h3>
+        <p>Those arrows didn't show the correct direction of energy transfer. <br>
+            <em>Be sure to watch how energy and matter move as you're examining 
+                the evidence!</em>
+        </p>
+    </div>
+    <br>
+    <br> 
+
+    <!--question 7-->
+    <div class=level>
+        <h2>LEVEL 7:</h2>
+    </div>
+    <div class="question" id="q7Container">
+        <form>
+            <label for="answer7">
+                I'm the letter you'd form if you drew a few lines <br>
+                To connect all the creatures on which no one dines. <br>
+                What am I? <br>   
+            </label>           
+            <input type="text" id="answer7" name="w" 
+            placeholder="???" size= "8" required 
+            pattern="[Ww]|[Bb]ears? [Hh]awks? [Ss]harks?" title="Type one letter that is formed by a 'connect-the-dots' 
+            between the top predators.">
+            <input type="submit" value="Check My Answer!" id="q7Button"> 
+            <br>
+            <p class="tip">Optional: Mouse over below to <strong>draw</strong> on the image.</p>
+        </form>
+        <div class="imageWrapper" id="q7ImageWrapper">
+            <img src="assets/W.png" id="q7Image" title="Pacific Northwest food web" 
+            alt="Food web of the Pacific Northwest containing 8 organisms. Type the top
+            predators in alphabetical order. 
+            An arrow goes from phytoplankton to plankton.
+            Another arrow goes from plankton to krill.
+            Another goes from krill to salmon.
+            Another from salmon to bear.
+            Another from salmon to dolphin.
+            From salmon to hawk.
+            From dolphin to shark.
+            From salmon to shark. In alphabetical order,
+            the organisms are: bear, dolphin, hawk, krill, phytoplankton, plankton, 
+            salmon, shark">
+            <p class="tip">Click the button below to erase marker and start over.</p>
+            <input type="button" value="Clear" id="clearMarkerButton">
+        </div>
+    </div>
+    <!--clue 7: does not display until correct answer is given-->
+    <div class="clue" id="clue7Container">
+        <h3><em>W</em>onderful!</h3>
+        <p>Keep the food web in mind as you're examining the evidence.<br>
+            <em>(Also, someone with W in their name is partially responsible 
+            for the Salmon Famine...!)</em>
+        </p>
+    </div> 
+    <br>
+    <br> 
+
+    <!--question 8-->  
+    <div class=level>
+        <h2>LEVEL 8:</h2>
+    </div>
+    <div class="question" id="q8Container">
+            <form>
+            <label for="answer8">
+                My <em>first part</em> is from the producer that could wither in a drought <br>
+                Without making others in its community die out. <br>
+                My <em>second part</em> is the number of its energy's consumers. <br>
+                My <em>whole</em> could grow its population... or keep it a late bloomer. <br>
+                What am I? <br>   
+            </label>           
+            <input type="text" id="answer8" name="climate" 
+            placeholder="???" size= "8" required 
+            pattern="[Cc]limate" title="We're looking for a two syllable word that is part of the environment. 
+            The first four letters are from the producer that could be removed 
+            without causing other organisms to go extinct. The rest of the word *sounds like* 
+            the number of consumers that get energy from this producer (directly OR indirectly 
+            through the food chain). Try saying the two parts together out loud until you hear
+            the word it sounds like.">
+            <input type="submit" value="Check My Answer!" id="q8Button">
+            <p><em>Optional: Click below to mark on the food web.</em></p>
+        </form>
+        <div class="imageWrapper" id="q8ImageWrapper">
+            <img src="assets/clim8.jpg" id="q8Image" title="Wetland/forest food web" 
+            alt="A food web containing 11 organisms and 17 energy relationships,
+            described from bottom to top and left to right. 
+            An arrow goes from climbing vine to vole.
+            Another arrow goes from climbing vine to locust.
+            Another goes from mulberry to locust.
+            Another from mulberry to hare.
+            Another from mulberry to squirrel.
+            From locust to vole.
+            From locust to frog.
+            From locust to robin.
+            From squirrel to eagle. 
+            From vole to fox.
+            From frog to heron.
+            From frog to snake.
+            From hare to fox.
+            From hare to snake.
+            From robin to eagle.
+            From snake to heron.
+            From snake to eagle.">
+            <p class="tip">Click the button below to erase marks and start over.</p>
+            <input type="button" value="Clear" id="clearHighlightButton">
+        </div>
+    </div>
+    <!--clue 8: does not display until correct answer is given-->
+    <div class="clue" id="clue8Container">
+        <h3>Amazing!</h3>
+        <p>Climate--which involves temperature and precipitation--is just one 
+            non-living (environmental) factor that could affect the salmon's survival. <br>
+            <em>Be sure to keep environmental factors in mind as you're working 
+                through the evidence!</em>
+        </p>
+        <p>
+
+        </p>
+    </div>
+    <br>
+    <br>
+
+    <!--Solving the mystery; shows up after all clues are earned-->
+    <div class="question" id="q9Container">
+        <h2>Solving the Mystery...</h2>
+        <h3><em>Under Construction--Please Come Back Soon!</em></h3>
+        <input type="button" value="Show Solution" id="showSolutionButton"> 
+        <form>
+            <fieldset>
+                <legend>Whose actions are primarily responsible for causing the Salmon Famine? <br>
+                (There are two best answers.) 
+                </legend>
+                <input type="checkbox" name="suspect" id="suspect0" value="oscarDeLaHoya"> 
+                <label for="suspect0">Oscar de la Hoya (Caliente Corporation)</label> <br>
+                <input type="checkbox" name="suspect" id="suspect1Correct" value="beaTartan"> 
+                <label for="suspect1Correct">Bea Tartan (Silverwood Beautification Committee)</label> <br>
+                <input type="checkbox" name="suspect" id="suspect2Correct" value="lorraineHadwick"> 
+                <label for="suspect2Correct">Lorraine Hadwick (Bear Scare)</label> <br>
+                <input type="checkbox" name="suspect" id="suspect3" value="danLewis"> 
+                <label for="suspect3">Dan Lewis (ABC Logging)</label> <br>
+                <input type="checkbox" name="suspect" id="suspect4" value="saraSmallfoot"> 
+                <label for="suspect4">Sara Smallfoot (Environmental Protection Agency)</label> <br>
+                <input type="checkbox" name="suspect" id="suspect5" value="nancyRatterby"> 
+                <label for="suspect5">Nancy Ratterby ("What's Simmering in Silverwood")</label> <br>
+                <input type="checkbox" name="suspect" id="suspect6" value="floBanks"> 
+                <label for="suspect6">Dr. Flo Banks (Silverwood University)</label> <br>      
+                <input type="checkbox" name="suspect" id="suspect7" value="richardHatton"> 
+                <label for="suspect7">Richard Hatton (Photographer)</label> <br>
+            </fieldset>
+            <br>
+        <label for="mysteryExplanation">Explain in detail how these people's actions led to
+            the Salmon Famine.
+        </label><br>
+        <textarea name="mysteryExplanation" rows="10" cols="45" 
+        minlength="61" placeholder="I think..." label="Type your explanation here!" required></textarea>
+        <br>
+        <input type="submit" value="Check My Answer!" id="q9Button">
+        </form>       
+    </div>
+    <br>
+    <br>
+
+    <!--Solution Video-->
+    <div class="clue" id="solutionContainer">
+        <h3>Here's how we solved the case!</h3>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XlTYwRn7_c8" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="tip">Video not loading? Navigate here
+            to watch the video on <a href="https://youtu.be/XlTYwRn7_c8" target=" ">Youtube</a>.</p>
+
+    </div>
+
+    <footer>
+        <h3>Copyright Heather Cole, 2021</h3>
+        <h4><a href="https://heathercoleinstructionaldesign.wordpress.com/" target=" ">Instructional Design Portfolio</a></h4>
+    </footer>                   
+    
+    <script src="js/main.js"></script>
+
+</body>
+</html>
