@@ -13,7 +13,6 @@
 	'https://www.youtube-nocookie.com' has been blocked by CORS policy: 
 	No 'Access-Control-Allow-Origin' header is present on the requested resource."; 
 	-"Failed to load resource: net::ERR_FAILED (googleads.g.doubleclick.net/pagead/id:1)"; 
--Upload on GitHub and GitPages, link to my Portfolio;
 -Feedback button for users to identify bugs and suggest new features;
 -UX: 
 	-Make H3 of Clue div show up at the same Y as the submit button (use getBoundingClientRect());
@@ -26,10 +25,15 @@
 -Intro:
 	-video? voice-over? text?;
 -Further CSS Styling:
+	-Make Level <h2> change color when answered correctly
 	-Unique font?;
 	-Color pallette;
 -Responsive:
-	-Test and optimize for cell phone;
+	-Figure out why the text shows up at various unexpected sizes and adjust;
+	-Justify text?
+	-Make sure pictures and text fields will show up big enough. 
+	-Make Lvl 7 (mouse-over) work in phone (currently have to tap).
+	-Make an app version??
 -Email results:
 	-Or hook up to Google classroom or another LMS??;
 -Add tutorials/help links (in new tab)

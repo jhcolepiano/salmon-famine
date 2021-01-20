@@ -278,7 +278,7 @@ let onQ9ButtonClick = function(e) {
     let mysteryExplanation = document.getElementsByName("mysteryExplanation")[0].value;
     let answer9 = document.getElementsByName("suspect");
     
-    console.log(mysteryExplanation.length);
+    console.log("Length of typed input is " + mysteryExplanation.length + " characters.");
     //iterate through checkboxes and count the number that are checked:
     for (i = 0; i < answer9.length; i++) {      
         if (answer9[i].checked) {
@@ -289,7 +289,7 @@ let onQ9ButtonClick = function(e) {
     //unless there are exactly two boxes checked, alert user to select 2 answers:
     if (numberOfSuspectsChecked > 2 || numberOfSuspectsChecked <= 1 ) {
         alert("Please select two primary suspects.");
-        console.log(answer9[1].checked + ' and ' + answer9[2].checked);
+        console.log("Correct answer 1 checked? " + answer9[1].checked + ' Correct answer 2 checked? ' + answer9[2].checked);
         return false;
         
         /*If both checked answers are correct, but the text area response is too short,
@@ -312,7 +312,7 @@ let onQ9ButtonClick = function(e) {
         /*If one of the answers is correct, and explanation is too short,
         notify user and ask for more information:*/
     } else if ((answer9[1].checked || answer9[2].checked) && !(mysteryExplanation.length > 60)) {
-        console.log(mysteryExplanation.length);
+        console.log("Length of typed input is " + mysteryExplanation.length + " characters.");
         alert("You're almost there! Please look back at your clues, and be sure to explain your answer a little more!");
         return false;
 
