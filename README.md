@@ -4,4 +4,4 @@ An ecological mystery game designed for science education.
 
 OBJECTIVE: The learner will use evidence of interdependence to predict how changes in a community may affect other organisms in the community.
 
-Find the website here: https://jhcolepiano.github.io/salmon-famine/
+Preview the website here: https://jhcolepiano.github.io/salmon-famine/
