@@ -27,6 +27,108 @@ footer {
     /*font-size: smaller;*/
 }
 
+
+#mapWrapper {
+    overflow: hidden;
+    /*max-width: 1000px;
+    min-height: 300px;
+    max-height: 400px;*/
+    grid-column: 1 / 13;
+    grid-row: 1 / 7;    
+}
+
+#mapPic {
+    /*max-width: 1000px;
+    min-width: 900px;
+    min-height: 300px;
+    max-height: 400px;
+    margin-left: 50%; 
+    transform: translateX(-50%);*/
+}
+
+.location {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    background-color: black;
+    padding: 5px;
+}
+
+#loc0University {
+    grid-column: 4 / span 1;
+    grid-row: 3 / span 1;
+    background-color: indianred;
+}
+
+#loc1SpawningArea {
+    grid-column: 9 / span 1;
+    grid-row: 4 / span 1;
+    background-color: indianred;
+}
+
+#loc2Library {
+    grid-column: 7 / span 1;
+    grid-row: 1 / span 1;
+    background-color: indianred;
+}
+
+#loc3RichardHatton {
+    grid-column: 11 / span 1;
+    grid-row: 5 / span 1;
+    background-color: indianred;
+}
+
+#loc4CalienteCorp {
+    grid-column: 5 / span 1;
+    grid-row: 2 / span 1;
+    background-color: indianred;
+}
+
+#loc5EPA {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 1;
+    background-color: indianred;
+}
+
+#loc6LorraineHadwick {
+    grid-column: 12 / span 1;
+    grid-row: 6 / span 1;
+    background-color: indianred;
+}
+
+#loc7DanLewis {
+    grid-column: 8 / span 1;
+    grid-row: 2 / span 1;
+    background-color: indianred;
+}
+
+#loc8BeaTartan {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
+    background-color: indianred;
+}
+
+#navWrapper {
+    border: 2px solid black;
+    display: grid;
+    grid-template:  ". . . c . . . . . . . ." fr
+                    ". a . . . . . . . g . ." fr
+                    ". . b . . . i . . . h ." fr
+                    ". . . . d . . . . . . ." fr
+                    ". . . . . . . . f . . ." fr
+                    ". . . . . . e . . . . ." fr / repeat(12, 1 fr);
+    /*overflow: hidden;*/
+    max-width: 1000px;
+    /*min-height: 300px;
+    max-height: 400px;*/
+    gap: 10px 10px;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
 .clue {
     display: none;
     margin: 20px 20px 0 15%;

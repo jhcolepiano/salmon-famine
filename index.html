@@ -70,11 +70,42 @@
     </div> 
 
     <!--Navigation: Map with key locations marked. Links to each question added through 
-        javascript once the previous level has been solved-->
-    <div class="map">
-        <img src="assets/Map.PNG"
+        javascript (and lock images removed) once the previous level has been solved-->
+    <div id="navWrapper">
+        <div id="mapWrapper">
+            <img src="assets/Silverwood Map Drawing.png" alt="Map of Silverwood" id="mapPic">
+        </div>    
+        <!--<div class=location id=loc0CityHall>City Hall</div>-->
+        <div class="location" id="loc0University">
+            <img src="assets/icon-institution.png" title="Silverwood University" alt="Silverwood University">
+        </div>
+        <div class="location" id="loc1SpawningArea">
+            <img src="assets/icon-salmon.png" title="Salmon Spawning Area" alt="Salmon Spawning Area">
+        </div>
+        <div class="location" id="loc2Library">
+            <img src="assets/icon-library.png" title="Public Library of Silverwood" alt="Public Library of Silverwood">
+        </div>
+        <div class="location" id="loc3RichardHatton">
+            <img src="assets/icon-house.png" title="Home of Richard Hatton" alt="Home of Richard Hatton">
+        </div>        
+        <div class="location" id="loc4CalienteCorp">
+            <img src="assets/icon-factory.png" title="Caliente Corporation" alt="Caliente Corporation">
+        </div> 
+        <div class="location" id="loc5EPA">
+            <img src="assets/icon-institution.png" title="Environmental Protection Agency" alt="Environmental Protection Agency">
+        </div>
+        <div class="location" id="loc6LorraineHadwick">
+            <img src="assets/icon-house.png" title="Home of Lorraine Hadwick" alt="Home of Lorraine Hadwick">
+        </div>
+        <div class="location" id="loc7DanLewis">
+            <img src="assets/icon-house.png" title="Home of Dan Lewis" alt="Home of Dan Lewis">
+        </div>
+        <div class="location" id="loc8BeaTartan">
+            <img src="assets/icon-house.png" title="Home of Bea Tartan" alt="Home of Bea Tartan">
+        </div>
     </div> 
-        
+
+    <!--clue 0: displays when loc0University is clicked/when person is dragged-->    
     <!--question 1-->
     <div class=level>
         <h2>LEVEL 1:</h2>
