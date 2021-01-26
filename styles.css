@@ -111,17 +111,9 @@ footer {
 #navWrapper {
     border: 2px solid black;
     display: grid;
-    grid-template:  ". . . c . . . . . . . ." fr
-                    ". a . . . . . . . g . ." fr
-                    ". . b . . . i . . . h ." fr
-                    ". . . . d . . . . . . ." fr
-                    ". . . . . . . . f . . ." fr
-                    ". . . . . . e . . . . ." fr / repeat(12, 1 fr);
-    /*overflow: hidden;*/
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(6, 1fr);
     max-width: 1000px;
-    /*min-height: 300px;
-    max-height: 400px;*/
-    gap: 10px 10px;
     justify-items: center;
     align-items: center;
     justify-content: center;
