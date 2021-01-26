@@ -114,6 +114,8 @@ footer {
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
     max-width: 1000px;
+    min-width: 500px;
+    overflow: visible;
     justify-items: center;
     align-items: center;
     justify-content: center;
