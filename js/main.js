@@ -80,7 +80,7 @@ const ratsPattern = new RegExp('[Rr]ats?');
 
 let onQ4ButtonClick = function(e) {
     let answer4 = document.getElementById("answer4").value;
-    if (energyPattern.test(answer4) === true) {
+    if (ratsPattern.test(answer4) === true) {
         e.preventDefault();
         document.getElementById('clue4Container').style.display = "block";
         document.getElementById('q4Container').style.display = "none";
