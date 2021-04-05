@@ -1,7 +1,7 @@
 ***Prioritized Feature List for Case of the Salmon Famine*** 
 
 -Clues:
-	-clicking greyed out portion escapes the lightbox
+	
 -Nav:
 	-tabs for the standards, disclaimer and directions?
 
@@ -15,13 +15,12 @@
 -UX: 
 	-Make H3 of Clue div show up at the same Y as the submit button (use getBoundingClientRect());
 	-Toggle buttons to display Objective, Standards, Disclaimer and Directions;
--Get feedback, usability testing;
+	-Get feedback, usability testing;
+	-clicking greyed out portion escapes the lightbox
+	-get bottom of scroll bar within clues to show up within the viewport
+
 -Intro:
 	-video? voice-over? text?;
--Further CSS Styling:
-	-Make Level <h2> change color when answered correctly
-	-Unique font?;
-	-Color pallette;
 -Responsive:
 	-Figure out why the text shows up at various unexpected sizes and adjust;
 	-Justify text?
