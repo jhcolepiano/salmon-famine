@@ -78,7 +78,7 @@
     <div class=level id="level1Heading">
         <h2>LEVEL 1:</h2>
     </div>
-    <div class="question" id="q1Container">
+    <div class="question fade" id="q1Container">
         <form>
             <label for="answer1">
                 I produce food every day, just like a factory. <br>
@@ -93,14 +93,14 @@
         </form>
      </div>
      <!--clue 1: does not display until correct answer is given-->
-     <div class="clue" id="clue1Container">
+     <div class="clue fade" id="clue1Container">
         <h3>Great Job! <em>You've unlocked new locations on your map!</em></h3>
         <p>Although producers don't eat, they do make food for everyone else! <br>
             <em>Keep this in mind as you're sleuthing: Each riddle's solution 
             is a hint for the overall mystery.</em>
         </p>
         <figure>
-            <img src="assets/tree1" title="Tree with falling leaves by a stream" alt="Tree with falling leaves by a stream">
+            <img src="assets/tree1 pexels-james-wheeler-1564655.jpg" title="Tree with falling leaves by a stream" alt="Tree with falling leaves by a stream">
             <figcaption>Photo credit: James Wheeler (Pexels)</figcaption>
         </figure>
         <br>
@@ -112,9 +112,8 @@
     <div class=level id=level2Heading>
         <h2>LEVEL 2:</h2>
     </div>
-    <div class="question" id="q2Container">
+    <div class="question fade" id="q2Container">
         <form>
-            <img src="assets/Dead Rose pexels-monicore-136347.jpg" title="Dead rose" alt="Dead rose">
             <label for="answer2">
                 We may not seem as pleasant as a fragrant red rose, <br>
                 But our efforts are part of the reason it grows. <br>               
@@ -125,6 +124,10 @@
             placeholder="???" size= "12" required 
             pattern="[Dd]ecomposer?s?" title="Hint: it rhymes!"> 
             <input type="submit" value="Check My Answer!" id="q2Button">
+            <figure>
+                <img src="assets/Dead Rose pexels-monicore-136347.jpg" title="Dead rose" alt="Dead rose">
+                <figcaption>Photo credit: Monicore (Monica Stawowy), Pexel</figcaption>
+            </figure>
         </form>
     </div>
     <!--clue 2: does not display until correct answer is given-->
@@ -146,12 +149,7 @@
     <div class=level id=level3Heading>
         <h2>LEVEL 3:</h2>
     </div>
-    <div class="question" id="q3Container">
-        <figure>
-            <img src="assets/Ocean Vent Community NOAA 9660806745_b1ae709c75_c.jpg" title="Deep Ocean Volcanic Vent Community" 
-            alt="Deep Ocean Volcanic Vent Community">
-            <figcaption>Photo credit: NOAA Okeanos Explorer Program, Galapagos Rift Expedition 2011</figcaption>
-        </figure>
+    <div class="question fade" id="q3Container">
         <form>
             <label for="answer3">
                 They get it from the the sun or deep vents in the sea. <br>
@@ -161,10 +159,15 @@
             placeholder="???" size= "8" required 
             pattern="[Ee]nergy" title="Hint: it rhymes!"> 
             <input type="submit" value="Check My Answer!" id="q3Button">
+            <figure>
+                <img src="assets/Ocean Vent Community NOAA 9660806745_b1ae709c75_c.jpg" title="Deep Ocean Volcanic Vent Community" 
+                alt="Deep Ocean Volcanic Vent Community">
+                <figcaption>Photo credit: NOAA Okeanos Explorer Program, Galapagos Rift Expedition 2011</figcaption>
+            </figure>        
         </form>
      </div>
     <!--clue 3: does not display until correct answer is given-->
-    <div class="clue" id="clue3Container">
+    <div class="clue fade" id="clue3Container">
         <h3>Right On! <em>You've unlocked new locations on your map!</em></h3>
         <p>The energy in most ecosystems comes from the sun and 
             must be captured by plants. An organism uses most of that energy, 
@@ -184,10 +187,10 @@
         </div>     
    
     <!--question 4-->
-    <div class=level id=level4Heading>
+    <div class="level" id="level4Heading">
         <h2>LEVEL 4:</h2>
     </div>
-    <div class="question" id="q4Container">
+    <div class="question fade" id="q4Container">
         <form>
             <p>
                 Now that we know you solve riddles so well, <br>
@@ -217,7 +220,7 @@
         </div>
     </div>
         <!--clue 4: does not display until correct answer is given-->
-        <div class="clue" id="clue4Container">
+        <div class="clue fade" id="clue4Container">
             <h3>Well Done! <em>You've unlocked new locations on your map!</em></h3>
             <p>If two species compete over a third (food species),
                 all three populations will be affected by a change in any 
@@ -234,10 +237,10 @@
  
 
     <!--question 5-->
-    <div class=level id=level5Heading>
+    <div class="level" id="level5Heading">
         <h2>LEVEL 5:</h2>
     </div>
-    <div class="question" id="q5Container">
+    <div class="question fade" id="q5Container">
         <form>
             <label for="answer5">
                 For this riddle, use the food chain to <em>spell out a word</em>: <br>
@@ -254,14 +257,19 @@
         </form>
     </div>
     <!--clue 5: does not display until correct answer is given-->
-    <div class="clue" id="clue5Container">
-        <h3>Way to Go! <em>You've unlocked new locations on your map!</em></h3>
-        <p>Salmon can't run, but they can hide! <br>
+    <div class="clue fade" id="clue5Container">
+        <h3>Way to Go! <em>You've unlocked TWO new locations on your map!!</em></h3>
+        <p>
+            Salmon can't run, but they can hide! 
+        </p>
+        <p>
             Actually, a <em>salmon run</em>--the migration of salmon up a river from the ocean so 
             that they can spawn--is all about giving the next generation the best 
             chance of <em>hiding</em> from predators. Alevin or "sac fry" (newly hatched salmon) hide in the 
             stream gravel for protection, feeding off the remainder of their yolk until they can fend
-            for themselves.<br>
+            for themselves.
+        </p>
+        <p>  
             <em>Be sure to watch how energy and matter move as you're examining 
                 the evidence!</em>
         </p>
@@ -274,10 +282,10 @@
     </div>
    
     <!--question 6-->
-    <div class=level id=level6Heading>
+    <div class="level" id="level6Heading">
         <h2>LEVEL 6:</h2>
     </div>
-    <div class="question" id="q6Container">
+    <div class="question fade" id="q6Container">
         <p>On treasure maps I mark the spot, <br>
             On tests, I mark what's wrong. <br>
             In this food web, I'm doing both: <br>
@@ -298,7 +306,11 @@
         <div class="imageWrapper" id="q6ImageWrapper">
             <!--Button overlays on top of X between bird, caterpillar, mouse and grasshopper-->
             <div class="transparent link button" id="xButton"></div>
-            <img src="assets/x-marks-spot.jpg" id="q6Image" title="A forest food web" 
+            <img src="assets/x-marks-spot.jpg" id="q6Image" title="A forest food web with many crossing arrows. Which numbered arrow 
+            is incorrect: Arrow 1 goes from flowers to grasshopper.
+            Arrow 2 goes from grasshopper to bird. 
+            Arrow 3 goes from bird to caterpillar.
+            Arrow 4 goes from rat to mosquito." 
             alt="A forest food web with many crossing arrows. Which numbered arrow 
             is incorrect: Arrow 1 goes from flowers to grasshopper.
             Arrow 2 goes from grasshopper to bird. 
@@ -307,7 +319,7 @@
         </div>
     </div>
     <!--clue 6: does not display until correct answer is given-->
-    <div class="clue" id="clue6Container">
+    <div class="clue fade" id="clue6Container">
         <h3>That's It! <em>You've unlocked new locations on your map!</em></h3>
         <p>Those arrows didn't show the correct direction of energy transfer. <br>
             <em>Be sure to watch how energy and matter move as you're examining 
@@ -319,10 +331,10 @@
 
 
     <!--question 7-->
-    <div class=level id=level7Heading>
+    <div class="level" id="level7Heading">
         <h2>LEVEL 7:</h2>
     </div>
-    <div class="question" id="q7Container">
+    <div class="question fade" id="q7Container">
         <form>
             <label for="answer7">
                 I'm the letter you'd form if you drew a few lines <br>
@@ -356,7 +368,7 @@
         </div>
     </div>
     <!--clue 7: does not display until correct answer is given-->
-    <div class="clue" id="clue7Container">
+    <div class="clue fade" id="clue7Container">
         <h3><em>W</em>onderful! <em>You've unlocked new locations on your map!</em></h3>
         <p>Keep the food web in mind as you're examining the evidence.<br>
             <em>(Also, someone with W in their name is partially responsible 
@@ -368,10 +380,10 @@
 
 
     <!--question 8-->  
-    <div class=level id=level8Heading>
+    <div class="level" id="level8Heading">
         <h2>LEVEL 8:</h2>
     </div>
-    <div class="question" id="q8Container">
+    <div class="question fade" id="q8Container">
             <form>
             <label for="answer8">
                 My <em>first part</em> is from the producer that could wither in a drought <br>
@@ -417,7 +429,7 @@
         </div>
     </div>
     <!--clue 8: does not display until correct answer is given-->
-    <div class="clue" id="clue8Container">
+    <div class="clue fade" id="clue8Container">
         <h3>Amazing! <em>You've unlocked new locations on your map!</em></h3>
         <p>Climate--which involves temperature and precipitation--is just one 
             non-living (environmental) factor that could affect the salmon's survival. <br>
@@ -431,7 +443,7 @@
     </div>
 
         <!--Solving the mystery; shows up after all clues are earned-->
-        <div class="question" id="q9Container">
+        <div class="question fade" id="q9Container">
             <h2>Solving the Mystery...</h2>
             <input type="button" value="Show Solution" id="showSolutionButton"> 
             <form>
@@ -513,7 +525,7 @@
         <br>    
 
     <!--Solution Video-->
-    <div class="clue" id="solutionContainerCorrect">
+    <div class="clue fade" id="solutionContainerCorrect">
         <h3>Congratulations!</h3>
         <p>
             You solved the case of the Salmon Famine! 
@@ -532,7 +544,7 @@
 
     </div>
 
-    <div class="clue" id="solutionContainerIncorrect">
+    <div class="clue fade" id="solutionContainerIncorrect">
         <h3>Here's how we solved the case!</h3>
         <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XlTYwRn7_c8" frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -1145,7 +1157,7 @@
     </div>
 </div>
 
-<!--LIGHTBOX8 for loc8DanLewis-->
+<!--LIGHTBOX8 for loc8BeaTartan-->
 <div class="lightbox" id="lightbox8">
     <!--Lightbox Contents-->
     <div class="lightboxContent" id="lightboxContent8">

@@ -151,6 +151,8 @@ let loc0University = document.getElementById("loc0University");
 let onUniversityClick = function(e) {
     e.preventDefault();
     document.getElementById('lightbox0').style.display = "block";
+    document.getElementById('level2Heading').style.display = "block";
+    document.getElementById('q2Container').style.display = "block";
 }
 
 loc0University.addEventListener("click", onUniversityClick, false);
@@ -225,6 +227,8 @@ let loc1SpawningArea = document.getElementById("loc1SpawningArea");
 let onSpawningAreaClick = function(e) {
     e.preventDefault();
     document.getElementById('lightbox1').style.display = "block";
+    document.getElementById('level3Heading').style.display = "block";
+    document.getElementById('q3Container').style.display = "block";
 }
 
 loc1SpawningArea.addEventListener("click", onSpawningAreaClick, false);
@@ -299,6 +303,8 @@ let loc2Library = document.getElementById("loc2Library");
 let onLibraryClick = function(e) {
     e.preventDefault();
     document.getElementById('lightbox2').style.display = "block";
+    document.getElementById('level4Heading').style.display = "block";
+    document.getElementById('q4Container').style.display = "block";
 }
 
 loc2Library.addEventListener("click", onLibraryClick, false);
@@ -373,6 +379,8 @@ let loc3RichardHatton = document.getElementById("loc3RichardHatton");
 let onRichardHattonClick = function(e) {
     e.preventDefault();
     document.getElementById('lightbox3').style.display = "block";
+    document.getElementById('level5Heading').style.display = "block";
+    document.getElementById('q5Container').style.display = "block";
 }
 
 loc3RichardHatton.addEventListener("click", onRichardHattonClick, false);
@@ -444,9 +452,17 @@ function showSlides3(n) {
 //LIGHTBOX4 make loc4CalienteCorp button display lightbox4 of clues 
 let loc4CalienteCorp = document.getElementById("loc4CalienteCorp");
 
+let isCalienteCorpClicked = false;
+let isEPAClicked = false;
+
 let onCalienteCorpClick = function(e) {
     e.preventDefault();
     document.getElementById('lightbox4').style.display = "block";
+    isCalienteCorpClicked = true;
+    if (isCalienteCorpClicked == true && isEPAClicked == true) {
+        document.getElementById('level6Heading').style.display = "block";
+        document.getElementById('q6Container').style.display = "block";
+    }  
 }
 
 loc4CalienteCorp.addEventListener("click", onCalienteCorpClick, false);
@@ -521,6 +537,11 @@ let loc5EPA = document.getElementById("loc5EPA");
 let onEPAClick = function(e) {
     e.preventDefault();
     document.getElementById('lightbox5').style.display = "block";
+    isEPAClicked = true;
+    if (isCalienteCorpClicked == true && isEPAClicked == true) {
+        document.getElementById('level6Heading').style.display = "block";
+        document.getElementById('q6Container').style.display = "block";
+    }  
 }
 
 loc5EPA.addEventListener("click", onEPAClick, false);
@@ -594,6 +615,8 @@ let loc6LorraineHadwick = document.getElementById("loc6LorraineHadwick");
 
 let onLorraineHadwickClick = function(e) {
     e.preventDefault();
+    document.getElementById('level7Heading').style.display = "block";
+    document.getElementById('q7Container').style.display = "block";
     document.getElementById('lightbox6').style.display = "block";
 }
 
@@ -668,12 +691,14 @@ let loc7DanLewis = document.getElementById("loc7DanLewis");
 
 let onDanLewisClick = function(e) {
     e.preventDefault();
+    document.getElementById('level8Heading').style.display = "block";
+    document.getElementById('q8Container').style.display = "block";
     document.getElementById('lightbox7').style.display = "block";
 }
 
 loc7DanLewis.addEventListener("click", onDanLewisClick, false);
 
-//make close button for lightbox6
+//make close button for lightbox7
 let closeCluesLoc7 = document.getElementById("closeCluesLoc7");
 
 let onCloseClues7Click = function(e) {
@@ -742,6 +767,8 @@ let loc8BeaTartan = document.getElementById("loc8BeaTartan");
 
 let onBeaTartanClick = function(e) {
     e.preventDefault();
+    document.getElementById('level9Heading').style.display = "block";
+    document.getElementById('q9Container').style.display = "block";
     document.getElementById('lightbox8').style.display = "block";
 }
 
@@ -811,7 +838,7 @@ function showSlides8(n) {
   dots8[slideIndex8-1].className += " active";
 }
 
-//make q1 button check answer, hide question and show clue and new map location
+//make q1 button check answer, hide question and show new map location
 let q1Button = document.getElementById("q1Button");
 
 const treesPattern = new RegExp('[Tt]rees?');
@@ -824,8 +851,8 @@ let onQ1ButtonClick = function(e) {
         document.getElementById('clue1Container').style.display = "block";
         document.getElementById('q1Container').style.display = "none";
         q1Button.removeEventListener("click", onQ1ButtonClick, false);
-        document.getElementById('level2Heading').style.display = "block";
-        document.getElementById('q2Container').style.display = "block";
+        /*document.getElementById('level2Heading').style.display = "block";
+        document.getElementById('q2Container').style.display = "block";*/
     }
 }
 
@@ -844,8 +871,8 @@ let onQ2ButtonClick = function(e) {
         document.getElementById('clue2Container').style.display = "block";
         document.getElementById('q2Container').style.display = "none";
         q2Button.removeEventListener("click", onQ2ButtonClick, false);
-        document.getElementById('level3Heading').style.display = "block";
-        document.getElementById('q3Container').style.display = "block";
+        /*document.getElementById('level3Heading').style.display = "block";
+        document.getElementById('q3Container').style.display = "block";*/
     }
 }
 
@@ -864,8 +891,8 @@ let onQ3ButtonClick = function(e) {
         document.getElementById('clue3Container').style.display = "block";
         document.getElementById('loc2Library').style.display = "block";
         document.getElementById('q3Container').style.display = "none";
-        document.getElementById('level4Heading').style.display = "block";
-        document.getElementById('q4Container').style.display = "block";
+        /*document.getElementById('level4Heading').style.display = "block";
+        document.getElementById('q4Container').style.display = "block";*/
         q3Button.removeEventListener("click", onQ3ButtonClick, false);        
     }
 }
@@ -884,8 +911,8 @@ let onQ4ButtonClick = function(e) {
         document.getElementById('loc3RichardHatton').style.display = "block";
         document.getElementById('clue4Container').style.display = "block";
         document.getElementById('q4Container').style.display = "none";
-        document.getElementById('level5Heading').style.display = "block";
-        document.getElementById('q5Container').style.display = "block";
+        /*document.getElementById('level5Heading').style.display = "block";
+        document.getElementById('q5Container').style.display = "block";*/
         q4Button.removeEventListener("click", onQ4ButtonClick, false);
         ratButton.removeEventListener("click", onRatButtonClick, false);
         notRatButton.removeEventListener("click", onNotRatButtonClick, false);
@@ -902,8 +929,8 @@ let onRatButtonClick = function() {
     document.getElementById('loc3RichardHatton').style.display = "block";
     document.getElementById('clue4Container').style.display = "block";
     document.getElementById('q4Container').style.display = "none";
-    document.getElementById('level5Heading').style.display = "block";
-    document.getElementById('q5Container').style.display = "block";
+    /*document.getElementById('level5Heading').style.display = "block";
+    document.getElementById('q5Container').style.display = "block";*/
     ratButton.removeEventListener("click", onRatButtonClick, false);
     notRatButton.removeEventListener("click", onNotRatButtonClick, false);
     q4Button.removeEventListener("click", onQ4ButtonClick, false);
@@ -933,8 +960,8 @@ let onQ5ButtonClick = function(e) {
         document.getElementById('loc5EPA').style.display = "block";
         document.getElementById('clue5Container').style.display = "block";
         document.getElementById('q5Container').style.display = "none";
-        document.getElementById('level6Heading').style.display = "block";
-        document.getElementById('q6Container').style.display = "block";
+        /*document.getElementById('level6Heading').style.display = "block";
+        document.getElementById('q6Container').style.display = "block";*/
         q5Button.removeEventListener("click", onQ5ButtonClick, false);
     }
 }
@@ -952,8 +979,8 @@ let onQ6ButtonClick = function(e) {
         document.getElementById('loc6LorraineHadwick').style.display = "block";
         document.getElementById('clue6Container').style.display = "block";
         document.getElementById('q6Container').style.display = "none";
-        document.getElementById('level7Heading').style.display = "block";
-        document.getElementById('q7Container').style.display = "block";
+        /*document.getElementById('level7Heading').style.display = "block";
+        document.getElementById('q7Container').style.display = "block";*/
         q6Button.removeEventListener("click", onQ6ButtonClick, false);
         xButton.removeEventListener("click", onXButtonClick, false);
         notXButton.removeEventListener("click", onNotXButtonClick, false);
@@ -970,8 +997,8 @@ let onXButtonClick = function(e) {
     document.getElementById('loc6LorraineHadwick').style.display = "block";
     document.getElementById('clue6Container').style.display = "block";
     document.getElementById('q6Container').style.display = "none";
-    document.getElementById('level7Heading').style.display = "block";
-    document.getElementById('q7Container').style.display = "block";
+    /*document.getElementById('level7Heading').style.display = "block";
+    document.getElementById('q7Container').style.display = "block";*/
     q6Button.removeEventListener("click", onQ6ButtonClick, false);
     xButton.removeEventListener("click", onXButtonClick, false);
     notXButton.removeEventListener("click", onNotXButtonClick, false);
@@ -1000,8 +1027,8 @@ let onQ7ButtonClick = function(e) {
         document.getElementById('loc7DanLewis').style.display = "block";
         document.getElementById('clue7Container').style.display = "block";
         document.getElementById('q7Container').style.display = "none";
-        document.getElementById('level8Heading').style.display = "block";
-        document.getElementById('q8Container').style.display = "block";
+        /*document.getElementById('level8Heading').style.display = "block";
+        document.getElementById('q8Container').style.display = "block";*/
         q7Image.removeEventListener("mousemove", drawOnMouseMove, false);
         q7Button.removeEventListener("click", onQ7ButtonClick, false);
         clearMarkerButton.removeEventListener("click", clearMarkerOnButtonClick, false);
@@ -1049,7 +1076,7 @@ let onQ8ButtonClick = function(e) {
         document.getElementById('loc8BeaTartan').style.display = "block";
         document.getElementById('clue8Container').style.display = "block";
         document.getElementById('q8Container').style.display = "none";
-        document.getElementById('q9Container').style.display = "block";
+        /*document.getElementById('q9Container').style.display = "block";*/
         q8Image.removeEventListener("click", highlightOnClick, false);
         q8Button.removeEventListener("click", onQ8ButtonClick, false);
         clearHighlightButton.removeEventListener("click", clearHighlightButtonClick, false);
