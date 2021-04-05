@@ -1,12 +1,10 @@
 ***Prioritized Feature List for Case of the Salmon Famine*** 
 
--Map: 
-	-with icons (divs); 
-	-that display when you complete levels (start with City Hall) at the same time as the next question;
-	-link icons to Level <h2>;
-	-add link back to map at the bottom of each .clue <div>;
--Add clues:
-	-add photo card for each suspect;
+-Clues:
+	-clicking greyed out portion escapes the lightbox
+	-add reminder about clues added to your map
+-Nav:
+	-tabs for the standards, disclaimer and directions?
 -Resolve cookies alerts:
 	-"Access to XMLHttpRequest at 
 	'https://googleads.g.doubleclick.net/pagead/id' from origin 

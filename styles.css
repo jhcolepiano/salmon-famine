@@ -2,7 +2,9 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.level h2 {
+.map h2,
+.level h2,
+.lightboxContent h2 {
     color: salmon;
 }
 
@@ -16,7 +18,9 @@ footer {
 }
 
 #standardsList,
-#collapseStandards {
+#collapseStandards,
+#disclaimer,
+#collapseDisclaimer {
     display: none;
 }
 
@@ -27,23 +31,162 @@ footer {
     /*font-size: smaller;*/
 }
 
-
-#mapWrapper {
-    overflow: hidden;
-    /*max-width: 1000px;
-    min-height: 300px;
-    max-height: 400px;*/
-    grid-column: 1 / 13;
-    grid-row: 1 / 7;    
+/* The modal (background) */
+.lightbox {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    margin-bottom: 200px; 
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ transparency */
 }
 
-#mapPic {
-    /*max-width: 1000px;
-    min-width: 900px;
-    min-height: 300px;
-    max-height: 400px;
-    margin-left: 50%; 
-    transform: translateX(-50%);*/
+/* Modal Content */
+.lightboxContent {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    margin-bottom: 200px;
+    padding-bottom: 30px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 1200px;
+  }
+
+  /* The Close Button */
+  .closeClues {
+    color: salmon;
+    float: right;
+    font-size: 48px;
+    font-weight: bold;
+  }
+  
+  .closeClues:hover,
+  .closeClues:focus {
+    color: #F2542C;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+/* Next & previous buttons on pictures in lightbox */
+.prevClue,
+.nextClue {
+    cursor: pointer;
+    position: absolute;
+    z-index: 1;
+    width: auto;
+    padding: 48px 16px;
+    bottom: 200px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 24px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/*Give lightbox text padding*/
+.text {
+    padding: 20px;
+}
+
+/* Hide the clue slides by default */
+.lightboxPics {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+/* Source and collapse button start out hidden */
+.source {
+    display: none;
+}
+
+.collapseSource {
+    display: none;
+}
+
+
+/* Position the "next button" to the right */
+.nextClue {
+  right: 0px;
+  border-radius: 3px 0 0 3px;
+}
+
+.prevClue {
+    left: 0px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevClue:hover,
+.nextClue:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: salmon;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+/* Formatting the actual lightbox clue images*/
+.lightbox img {
+  margin-bottom: -4px;
+  max-height: 650px;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #F2542C;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+.active, .dots:hover {
+background-color: salmon;
+}
+
+/* Fading animation */
+.fade {
+-webkit-animation-name: fade;
+-webkit-animation-duration: 1.5s;
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+/*map*/
+#mapWrapper {
+    overflow: hidden;
+    grid-column: 1 / 13;
+    grid-row: 1 / 7;    
 }
 
 .location {
@@ -52,64 +195,73 @@ footer {
     border-radius: 15px;
     background-color: black;
     padding: 5px;
+    display: none;
+    cursor: pointer;
 }
+
+#locACityHall {
+    grid-column: 7 / span 1;
+    grid-row: 1 / span 1;
+    background-color: #F2542C;
+    display: block;
+}    
 
 #loc0University {
     grid-column: 4 / span 1;
     grid-row: 3 / span 1;
-    background-color: indianred;
+    background-color: #45BA50;
 }
 
 #loc1SpawningArea {
     grid-column: 9 / span 1;
     grid-row: 4 / span 1;
-    background-color: indianred;
+    background-color: #3B8DAC;
 }
 
 #loc2Library {
-    grid-column: 7 / span 1;
+    grid-column: 8 / span 1;
     grid-row: 1 / span 1;
-    background-color: indianred;
+    background-color:#FAC80E;
 }
 
 #loc3RichardHatton {
     grid-column: 11 / span 1;
     grid-row: 5 / span 1;
-    background-color: indianred;
+    background-color:#E4568D;
 }
 
 #loc4CalienteCorp {
     grid-column: 5 / span 1;
     grid-row: 2 / span 1;
-    background-color: indianred;
+    background-color: #E4568D;
 }
 
 #loc5EPA {
     grid-column: 3 / span 1;
     grid-row: 5 / span 1;
-    background-color: indianred;
+    background-color: #FF9A14;
 }
 
 #loc6LorraineHadwick {
     grid-column: 12 / span 1;
     grid-row: 6 / span 1;
-    background-color: indianred;
+    background-color: #F2542C;
 }
 
 #loc7DanLewis {
     grid-column: 8 / span 1;
     grid-row: 2 / span 1;
-    background-color: indianred;
+    background-color:#801A86;
 }
 
 #loc8BeaTartan {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
-    background-color: indianred;
+    background-color: #3B8DAC;
 }
 
 #navWrapper {
-    border: 2px solid black;
+    /*border: 2px solid #A0FF3F;*/
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -145,6 +297,7 @@ img {
 
 .question, 
 .level {
+    display: none;
     margin: 20px 20px 0 15%;
     line-height: 1.75;
     max-width: 600px;

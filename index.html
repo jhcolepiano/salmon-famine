@@ -54,6 +54,8 @@
     <!--Mystery description-->
     <div class="directions">
         <h4>Disclaimer</h4>
+        <h5 id="collapseDisclaimer"><a href="">(Collapse)</a></h5>
+        <h5 id="expandDisclaimer"><a href="">(Expand)</a></h5>
         <p id="disclaimer"> This form and all associated materials constitute a work of fiction produced 
             for educational purposes by Heather Cole. Places, photos and names are used fictitiously 
             and any similarity to actual persons, places and events is coincidental. I do not own and 
@@ -66,48 +68,14 @@
             of the salmon famine! The answers to the riddles themselves are clues in their own way! 
             Stay alert and look closely.
         </p> 
+        <p>
+            <strong>Click "City Hall"</strong> on the map below to begin.
+        </p>
 
     </div> 
-
-    <!--Navigation: Map with key locations marked. Links to each question added through 
-        javascript (and lock images removed) once the previous level has been solved-->
-    <div id="navWrapper">
-        <div id="mapWrapper">
-            <img src="assets/Silverwood Map Drawing.png" alt="Map of Silverwood" id="mapPic">
-        </div>    
-        <!--<div class=location id=loc0CityHall>City Hall</div>-->
-        <div class="location" id="loc0University">
-            <img src="assets/icon-institution.png" title="Silverwood University" alt="Silverwood University">
-        </div>
-        <div class="location" id="loc1SpawningArea">
-            <img src="assets/icon-salmon.png" title="Salmon Spawning Area" alt="Salmon Spawning Area">
-        </div>
-        <div class="location" id="loc2Library">
-            <img src="assets/icon-library.png" title="Public Library of Silverwood" alt="Public Library of Silverwood">
-        </div>
-        <div class="location" id="loc3RichardHatton">
-            <img src="assets/icon-house.png" title="Home of Richard Hatton" alt="Home of Richard Hatton">
-        </div>        
-        <div class="location" id="loc4CalienteCorp">
-            <img src="assets/icon-factory.png" title="Caliente Corporation" alt="Caliente Corporation">
-        </div> 
-        <div class="location" id="loc5EPA">
-            <img src="assets/icon-institution.png" title="Environmental Protection Agency" alt="Environmental Protection Agency">
-        </div>
-        <div class="location" id="loc6LorraineHadwick">
-            <img src="assets/icon-house.png" title="Home of Lorraine Hadwick" alt="Home of Lorraine Hadwick">
-        </div>
-        <div class="location" id="loc7DanLewis">
-            <img src="assets/icon-house.png" title="Home of Dan Lewis" alt="Home of Dan Lewis">
-        </div>
-        <div class="location" id="loc8BeaTartan">
-            <img src="assets/icon-house.png" title="Home of Bea Tartan" alt="Home of Bea Tartan">
-        </div>
-    </div> 
-
-    <!--clue 0: displays when loc0University is clicked/when person is dragged-->    
+  
     <!--question 1-->
-    <div class=level>
+    <div class=level id="level1Heading">
         <h2>LEVEL 1:</h2>
     </div>
     <div class="question" id="q1Container">
@@ -126,17 +94,18 @@
      </div>
      <!--clue 1: does not display until correct answer is given-->
      <div class="clue" id="clue1Container">
-        <h3>Great Job!</h3>
+        <h3>Great Job! <em>You've earned unlocked new locations on your map!</em></h3>
         <p>Although producers don't eat, they do make food for everyone else! <br>
             <em>Keep this in mind as you're sleuthing: Each riddle's solution 
             is a hint for the overall mystery.</em>
         </p>
-     </div>
-    <br>
-    <br>
+        <br>
+        <br>
+    </div>
+
 
     <!--question 2-->
-    <div class=level>
+    <div class=level id=level2Heading>
         <h2>LEVEL 2:</h2>
     </div>
     <div class="question" id="q2Container">
@@ -155,16 +124,17 @@
     </div>
     <!--clue 2: does not display until correct answer is given-->
     <div class="clue" id="clue2Container">
-        <h3>Nice Work!</h3>
+        <h3>Nice Work! <em>You've earned unlocked new locations on your map!</em></h3>
         <p>Decomposers help return nutrients to the soil so that plants can use them
             again to build their bodies. <br>
             <em>Keep this in mind as you're examining the evidence!</em>
         </p>
+        <br>
+        <br>
     </div>
-    <br>
-    <br>
+
     <!--question 3-->
-    <div class=level>
+    <div class=level id=level3Heading>
         <h2>LEVEL 3:</h2>
     </div>
     <div class="question" id="q3Container">
@@ -181,18 +151,19 @@
      </div>
     <!--clue 3: does not display until correct answer is given-->
     <div class="clue" id="clue3Container">
-        <h3>Right On!</h3>
+        <h3>Right On! <em>You've earned unlocked new locations on your map!</em></h3>
         <p>The energy in most ecosystems comes from the sun and 
             must be captured by plants. An organism uses most of that energy, 
             which then ends up as heat in the environment. Around 10% that isn't 
             used (and turned into heat) is stored in the organism's body and
             passes on up the food chain until there's no stored energy left. <br>
             <em>Keep this in mind as you're examining the evidence!</em></p>
-    </div>     
-    <br>
-    <br>    
+            <br>
+            <br> 
+        </div>     
+   
     <!--question 4-->
-    <div class=level>
+    <div class=level id=level4Heading>
         <h2>LEVEL 4:</h2>
     </div>
     <div class="question" id="q4Container">
@@ -226,18 +197,19 @@
     </div>
         <!--clue 4: does not display until correct answer is given-->
         <div class="clue" id="clue4Container">
-            <h3>Well Done!</h3>
+            <h3>Well Done! <em>You've earned unlocked new locations on your map!</em></h3>
             <p>If two species compete over a third (food species),
                 all three populations will be affected by a change in any 
                 one of them... <br>
                 <em>Keep this in mind as you're examining the evidence!</em>
             </p>
+            <br>
+            <br>
         </div>
-    <br>
-    <br> 
+ 
 
     <!--question 5-->
-    <div class=level>
+    <div class=level id=level5Heading>
         <h2>LEVEL 5:</h2>
     </div>
     <div class="question" id="q5Container">
@@ -258,7 +230,7 @@
     </div>
     <!--clue 5: does not display until correct answer is given-->
     <div class="clue" id="clue5Container">
-        <h3>Way to Go!</h3>
+        <h3>Way to Go! <em>You've earned unlocked new locations on your map!</em></h3>
         <p>Salmon can't run, but they can hide! <br>
             Actually, a <em>salmon run</em>--the migration of salmon up a river from the ocean so 
             that they can spawn--is all about giving the next generation the best 
@@ -268,11 +240,12 @@
             <em>Be sure to watch how energy and matter move as you're examining 
                 the evidence!</em>
         </p>
+        <br>
+        <br> 
     </div>
-    <br>
-    <br>    
+   
     <!--question 6-->
-    <div class=level>
+    <div class=level id=level6Heading>
         <h2>LEVEL 6:</h2>
     </div>
     <div class="question" id="q6Container">
@@ -306,17 +279,18 @@
     </div>
     <!--clue 6: does not display until correct answer is given-->
     <div class="clue" id="clue6Container">
-        <h3>That's It!</h3>
+        <h3>That's It! <em>You've earned unlocked new locations on your map!</em></h3>
         <p>Those arrows didn't show the correct direction of energy transfer. <br>
             <em>Be sure to watch how energy and matter move as you're examining 
                 the evidence!</em>
         </p>
+        <br>
+        <br> 
     </div>
-    <br>
-    <br> 
+
 
     <!--question 7-->
-    <div class=level>
+    <div class=level id=level7Heading>
         <h2>LEVEL 7:</h2>
     </div>
     <div class="question" id="q7Container">
@@ -354,17 +328,18 @@
     </div>
     <!--clue 7: does not display until correct answer is given-->
     <div class="clue" id="clue7Container">
-        <h3><em>W</em>onderful!</h3>
+        <h3><em>W</em>onderful! <em>You've earned unlocked new locations on your map!</em></h3>
         <p>Keep the food web in mind as you're examining the evidence.<br>
             <em>(Also, someone with W in their name is partially responsible 
             for the Salmon Famine...!)</em>
         </p>
+        <br>
+        <br> 
     </div> 
-    <br>
-    <br> 
+
 
     <!--question 8-->  
-    <div class=level>
+    <div class=level id=level8Heading>
         <h2>LEVEL 8:</h2>
     </div>
     <div class="question" id="q8Container">
@@ -414,7 +389,7 @@
     </div>
     <!--clue 8: does not display until correct answer is given-->
     <div class="clue" id="clue8Container">
-        <h3>Amazing!</h3>
+        <h3>Amazing! <em>You've earned unlocked new locations on your map!</em></h3>
         <p>Climate--which involves temperature and precipitation--is just one 
             non-living (environmental) factor that could affect the salmon's survival. <br>
             <em>Be sure to keep environmental factors in mind as you're working 
@@ -423,49 +398,91 @@
         <p>
 
         </p>
-    </div>
-    <br>
-    <br>
-
-    <!--Solving the mystery; shows up after all clues are earned-->
-    <div class="question" id="q9Container">
-        <h2>Solving the Mystery...</h2>
-        <h3><em>Under Construction--Please Come Back Soon!</em></h3>
-        <input type="button" value="Show Solution" id="showSolutionButton"> 
-        <form>
-            <fieldset>
-                <legend>Whose actions are primarily responsible for causing the Salmon Famine? <br>
-                (There are two best answers.) 
-                </legend>
-                <input type="checkbox" name="suspect" id="suspect0" value="oscarDeLaHoya"> 
-                <label for="suspect0">Oscar de la Hoya (Caliente Corporation)</label> <br>
-                <input type="checkbox" name="suspect" id="suspect1Correct" value="beaTartan"> 
-                <label for="suspect1Correct">Bea Tartan (Silverwood Beautification Committee)</label> <br>
-                <input type="checkbox" name="suspect" id="suspect2Correct" value="lorraineHadwick"> 
-                <label for="suspect2Correct">Lorraine Hadwick (Bear Scare)</label> <br>
-                <input type="checkbox" name="suspect" id="suspect3" value="danLewis"> 
-                <label for="suspect3">Dan Lewis (ABC Logging)</label> <br>
-                <input type="checkbox" name="suspect" id="suspect4" value="saraSmallfoot"> 
-                <label for="suspect4">Sara Smallfoot (Environmental Protection Agency)</label> <br>
-                <input type="checkbox" name="suspect" id="suspect5" value="nancyRatterby"> 
-                <label for="suspect5">Nancy Ratterby ("What's Simmering in Silverwood")</label> <br>
-                <input type="checkbox" name="suspect" id="suspect6" value="floBanks"> 
-                <label for="suspect6">Dr. Flo Banks (Silverwood University)</label> <br>      
-                <input type="checkbox" name="suspect" id="suspect7" value="richardHatton"> 
-                <label for="suspect7">Richard Hatton (Photographer)</label> <br>
-            </fieldset>
-            <br>
-        <label for="mysteryExplanation">Explain in detail how these people's actions led to
-            the Salmon Famine.
-        </label><br>
-        <textarea name="mysteryExplanation" rows="10" cols="45" 
-        minlength="61" placeholder="I think..." label="Type your explanation here!" required></textarea>
         <br>
-        <input type="submit" value="Check My Answer!" id="q9Button">
-        </form>       
+        <br>
     </div>
-    <br>
-    <br>
+
+        <!--Solving the mystery; shows up after all clues are earned-->
+        <div class="question" id="q9Container">
+            <h2>Solving the Mystery...</h2>
+            <input type="button" value="Show Solution" id="showSolutionButton"> 
+            <form>
+                <fieldset>
+                    <legend>Whose actions are primarily responsible for causing the Salmon Famine? <br>
+                    (There are two best answers.) 
+                    </legend>
+                    <input type="checkbox" name="suspect" id="suspect0" value="oscarDeLaHoya"> 
+                    <label for="suspect0">Oscar de la Hoya (Caliente Corporation)</label> <br>
+                    <input type="checkbox" name="suspect" id="suspect1Correct" value="beaTartan"> 
+                    <label for="suspect1Correct">Bea Tartan (Silverwood Beautification Committee)</label> <br>
+                    <input type="checkbox" name="suspect" id="suspect2Correct" value="lorraineHadwick"> 
+                    <label for="suspect2Correct">Lorraine Hadwick (Bear Scare)</label> <br>
+                    <input type="checkbox" name="suspect" id="suspect3" value="danLewis"> 
+                    <label for="suspect3">Dan Lewis (ABC Logging)</label> <br>
+                    <input type="checkbox" name="suspect" id="suspect4" value="saraSmallfoot"> 
+                    <label for="suspect4">Sara Smallfoot (Environmental Protection Agency)</label> <br>
+                    <input type="checkbox" name="suspect" id="suspect5" value="nancyRatterby"> 
+                    <label for="suspect5">Nancy Ratterby ("What's Simmering in Silverwood")</label> <br>
+                    <input type="checkbox" name="suspect" id="suspect6" value="floBanks"> 
+                    <label for="suspect6">Dr. Flo Banks (Silverwood University)</label> <br>      
+                    <input type="checkbox" name="suspect" id="suspect7" value="richardHatton"> 
+                    <label for="suspect7">Richard Hatton (Photographer)</label> <br>
+                </fieldset>
+                <br>
+            <label for="mysteryExplanation">Explain in detail how these people's actions led to
+                the Salmon Famine.
+            </label><br>
+            <textarea name="mysteryExplanation" rows="10" cols="45" 
+            minlength="61" placeholder="I think..." label="Type your explanation here!" required></textarea>
+            <br>
+            <input type="submit" value="Check My Answer!" id="q9Button">
+            </form>       
+            <br>
+            <br>
+        </div>
+
+    <!--Navigation: Map with key locations marked. Links to each question added through 
+        javascript (and lock images removed) once the previous level has been solved-->
+        <div class=map id=mapHeading>
+            <h2>MAP:</h2>
+        </div>
+        <div id="navWrapper">
+            <div id="mapWrapper">
+                <img src="assets/Silverwood Map Drawing.png" alt="Map of Silverwood" id="mapPic">
+            </div>    
+            <div class="location" id="locACityHall">
+                <img src="assets/icon-institution.png" title="City Hall" alt="City Hall">
+            </div>    
+            <div class="location" id="loc0University">
+                <img src="assets/icon-institution.png" title="Silverwood University" alt="Silverwood University">
+            </div>
+            <div class="location" id="loc1SpawningArea">
+                <img src="assets/icon-salmon.png" title="Salmon Spawning Area" alt="Salmon Spawning Area">
+            </div>
+            <div class="location" id="loc2Library">
+                <img src="assets/icon-library.png" title="Public Library of Silverwood" alt="Public Library of Silverwood">
+            </div>
+            <div class="location" id="loc3RichardHatton">
+                <img src="assets/icon-house.png" title="Home of Richard Hatton" alt="Home of Richard Hatton">
+            </div>        
+            <div class="location" id="loc4CalienteCorp">
+                <img src="assets/icon-factory.png" title="Caliente Corporation" alt="Caliente Corporation">
+            </div> 
+            <div class="location" id="loc5EPA">
+                <img src="assets/icon-institution.png" title="Environmental Protection Agency" alt="Environmental Protection Agency">
+            </div>
+            <div class="location" id="loc6LorraineHadwick">
+                <img src="assets/icon-house.png" title="Home of Lorraine Hadwick" alt="Home of Lorraine Hadwick">
+            </div>
+            <div class="location" id="loc7DanLewis">
+                <img src="assets/icon-house.png" title="Home of Dan Lewis" alt="Home of Dan Lewis">
+            </div>
+            <div class="location" id="loc8BeaTartan">
+                <img src="assets/icon-house.png" title="Home of Bea Tartan" alt="Home of Bea Tartan">
+            </div>
+        </div> 
+        <br>
+        <br>    
 
     <!--Solution Video-->
     <div class="clue" id="solutionContainer">
@@ -476,6 +493,690 @@
             to watch the video on <a href="https://youtu.be/XlTYwRn7_c8" target=" ">Youtube</a>.</p>
 
     </div>
+
+<!--LIGHTBOXA for locACityHall-->
+<div class="lightbox" id="lightboxA">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContentA">
+        <span class="closeClues" id="closeCluesLocA">&times;</span>
+        <div class="text">
+            <h2>At Silverwood City Hall...</h2>
+            <h4>The Mystery</h3>
+            <p>
+                The year is 2017. Because of your famed ecosystem expertise, you've been flown out to 
+                Silverwood, Washington to investigate a local mystery. At City Hall, Mayor Edwin Blackston 
+                explains the case.
+            </p>
+            <p>    
+                "Each fall, the rivers of Silverwood are usually full of salmon swimming upriver to lay 
+                their eggs, or <i>spawn</i> as it's called. Every year... except this year. 
+            </p>
+            <p>    
+                "This year, 
+                the salmon populations were so much smaller 
+                than usual that tens of thousands of dollars in the fishing and tourism industry were lost. 
+                Rumors are spreading that the beautiful rivers of Silverwood have been poisoned—if 
+                Silverwood loses its reputation as a prime fishing and vacation destination, it would 
+                be our ruin!
+            </p>
+            <p>
+                "Please help solve the case of the salmon famine before it’s too late!""
+            </p>
+            <h4>Your Mission</h4>
+            <p>
+                Salmon populations in Silverwood rivers are far smaller this year than before. 
+                Why? Solve the riddles to earn trips around Silverwood to interview suspects and 
+                gather clues. Find the culprit and recommend what Silverwood 
+                officials should do to save their salmon!
+            </p>
+
+            <h4>About Silverwood</h4>
+            <p>
+                Mayor Blackston shares a little more information about Silverwood while walking out out 
+                of City Hall. Primarily known for beautiful streams and excellent salmon fishing, Silverwoods' biggest 
+                local industry is tourism. As a result, when the national economy struggles, fewer people 
+                can afford an expensive fishing getaway, and the local economy takes a big hit. In 2013, 
+                Mayor Blackson sought to stabilize the economy by attracting new employers to the region, 
+                chiefly by offering tax breaks and other incentives.  
+            </p>
+            <h5 class="showSource" id="showSourceA"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSourceA"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="sourceA">
+                <p>
+                    Photo Credits: Omar Ramadan (Pexels) and James Wheeler (Pexels)
+                </p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics locA fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="assets/A Silverwood City Hallpexels-omar-ramadan-5692105.jpg" title="Silverwood City Hall" 
+            alt="Silverwood City Hall">
+        </div>
+    
+        <div class="lightboxPics locA fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="assets/A Stream with Fishermanpexels-james-wheeler-415471.jpg" title="A Fisherman at Silverwood Creek" 
+            alt="A Fisherman at Silverwood Creek">
+        </div>
+
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlidesA(-1)" id=prevClueLocA>&#10094;</span>
+            <span class="nextClue" onclick="plusSlidesA(1)" id=nextClueLocA>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dotsA" onclick="currentSlideA(1)"></span>
+            <span class="dots dotsA" onclick="currentSlideA(2)"></span>
+        </div>   
+    </div>
+</div>
+
+
+<!--LIGHTBOX0 for loc0University-->
+    <div class="lightbox" id="lightbox0">
+        <!--Lightbox Contents-->
+        <div class="lightboxContent" id="lightboxContent0">
+            <span class="closeClues" id="closeCluesLoc0">&times;</span>
+            <div class="text">
+                <h2>At Silverwood University...</h2>
+                <p>
+                    Dr. Flo Banks greets you. She takes you on a tour of her lab and 
+                    shares some of the research she and Dr. Reimchen have been working on
+                    that relates to salmon and nitrogen, a substance found in living things
+                    and rich soil. The writing is pretty technical, but you underline some
+                    key passages in their paper--you have a feeling it could be very useful
+                    in understanding connections between the salmon and 
+                    other parts of its ecosystem.
+                </p>
+                <h5 class="showSource" id="showSource0"><a href="">(Show Image/Text Credits)</a></h5>
+                <h5 class="collapseSource" id="collapseSource0"><a href="">(Collapse Image/Text Credits)</a></h5>
+                <div class="source"; id="source0">
+                    <p>
+                        Thomson G, Grant J, Kiel K. Canadian Parks and Wilderness 
+                        Society (CPAWS) Education Programs, Grizzly bears forever! 
+                        Senior high guide, Retrieved 2020, April 23 from 
+                        https://cpaws-southernalberta.org/secondary/
+                    </p>
+                    <p>Christina Morillo (Pexels)</p>
+                </div>
+            </div>
+
+            <!--Clue Pictures inside the lightbox-->
+          
+            <div class="lightboxPics loc0 fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/Salmon Famine 15.PNG" title="Graph Showing Salmon Population Change Over Time" 
+                alt="Graph Showing Salmon Population Change Over Time">
+            </div>
+        
+            <div class="lightboxPics loc0 fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/InkedSalmon Famine 8 CPAWS_LI.jpg" title="Study about salmon's relationship with the environment" 
+                alt="Study about salmon's relationship with the environment">
+            </div>
+        
+            <div class="lightboxPics loc0 fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/0 Flo Banks pexels-christina-morillo-1181514.jpg" title="Dr. Flo Banks" alt="Dr. Flo Banks">
+            </div>
+
+
+            <!--Previous < and Next > buttons on pictures--> 
+            <div>
+                <span class="prevClue" onclick="plusSlides0(-1)" id=prevClueLoc0>&#10094;</span>
+                <span class="nextClue" onclick="plusSlides0(1)" id=nextClueLoc0>&#10095;</span>
+            </div>
+            <br>
+            
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dots dots0" onclick="currentSlide0(1)"></span>
+                <span class="dots dots0" onclick="currentSlide0(2)"></span>
+                <span class="dots dots0" onclick="currentSlide0(3)"></span>
+            </div>   
+        </div>
+    </div>
+
+  <!--LIGHTBOX1 for loc1 Spawning Area-->
+  <div class="lightbox" id="lightbox1">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent1">
+        <span class="closeClues" id="closeCluesLoc1">&times;</span>
+        <div class="text">
+            <h2>At the Department of Fish and Wildlife Services...</h2>
+            <p>
+                You asked the Department of Fish and Wildlife Services to mark the environment of the 
+                local salmon on your map. They explained that the sockeye salmon in this area are a 
+                migratory species that live part of their lives in the ocean, and part in freshwater 
+                streams. Each year, many adult salmon come to this area to spawn (lay their eggs) and 
+                eventually die here. Within 1 year after they hatch, the new generation of fish swims 
+                downstream to the ocean, and comes back to spawn 3 years later.
+            </p>
+            <h5 class="showSource" id="showSource1"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource1"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="source1">
+                <p>http://www.skagitfisheries.org/skagit-fisheries-enhancement-group/edgewater/salmon/</p>
+                <p>Levi T, Darimont CT, MacDuffee M, Mangel M, Paquet P, Wilmers CC (2012) Using Grizzly Bears
+                     to Assess Harvest-Ecosystem Tradeoffs in Salmon Fisheries. PLoS Biol 10(4): e1001303. 
+                     https://doi.org/10.1371/journal.pbio.1001303https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001303
+                </p>
+                <p>
+                    Roheim K, Knapp G, Anderson J L (2007). The great salmon run: Competition between wild
+                     and farmed salmon. Retrieved 2020, April 23 from 
+                     https://pubs.iseralaska.org/media/4f35492a-0279-4d98-a22b-1ff7e593c6bc/2007_01-GreatSalmonRun.pdf
+                </p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc1 fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="assets/Salmon Famine 4.jpg" title="Salmon Life Cycle and Causes of Death" 
+            alt="Salmon Life Cycle and Causes of Death">
+        </div>
+    
+        <div class="lightboxPics loc1 fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="assets/Salmon Famine 10 Levi 2012.PNG" title="Salmon and Their Freshwater and Saltwater Communities" 
+            alt="Salmon and Their Freshwater and Saltwater Communities">
+        </div>
+    
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides1(-1)" id=prevClueLoc1>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides1(1)" id=nextClueLoc1>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots1" onclick="currentSlide1(1)"></span>
+            <span class="dots dots1" onclick="currentSlide1(2)"></span>
+        </div>   
+    </div>
+</div>  
+
+<!--LIGHTBOX2 for loc2Library-->
+<div class="lightbox" id="lightbox2">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent2">
+        <span class="closeClues" id="closeCluesLoc2">&times;</span>
+        <div class="text">
+            <h2>At the Silverwood Public Library...</h2>
+            <p>
+                Nancy Ratterby, librarian, mother of three and long time Silverwood resident 
+                helps you access news articles on Silverwood Creek. "I love Silverwood," she
+                gushes. "Please keep me posted on what you find out. I started an online forum 
+                for people to discuss local news and events, and drama like this would really
+                generate buzz! Speaking of which, there's nature photographer named Richard Hatton 
+                you should speak to. He's active on the forums and he might be able to give you 
+                some ideas of how the river may have changed over time."
+            </p>
+            <h5 class="showSource" id="showSource2"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource2"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="source2">
+                <p>
+                    Rafael Cosquiere (Pexels) and Andrea Piacquadio (Pexels)
+                </p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc2 fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/2 Library pexels-rafael-cosquiere-2041540.jpg" title="Silverwood Public Library" 
+            alt="Silverwood Public Library">
+        </div>
+    
+        <div class="lightboxPics loc2 fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="assets/2 Nancy Ratterby pexels-andrea-piacquadio-762080.jpg" title="Librarian Nancy Ratterby" 
+            alt="Librarian Nancy Ratterby">
+        </div>
+    
+        <div class="lightboxPics loc2 fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="assets/Salmon Famine 12.jpg" title="News Clipping from 2006" alt="News Clipping from 2006">
+        </div>
+
+        <div class="lightboxPics loc2 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="assets/Salmon Famine 13.jpg" title="News Clipping from 2008" alt="News Clipping from 2008">
+        </div>
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides2(-1)" id=prevClueLoc2>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides2(1)" id=nextClueLoc2>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots2" onclick="currentSlide2(1)"></span>
+            <span class="dots dots2" onclick="currentSlide2(2)"></span>
+            <span class="dots dots2" onclick="currentSlide2(3)"></span>
+            <span class="dots dots2" onclick="currentSlide2(4)"></span>
+        </div>   
+    </div>
+</div>
+
+<!--LIGHTBOX3 for loc3RichardHatton-->
+<div class="lightbox" id="lightbox3">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent3">
+        <span class="closeClues" id="closeCluesLoc3">&times;</span>
+        <div class="text">
+            <h2>At the Home of Richard Hatton...</h2>
+            <p>
+                Richard Hatton is a long time Silverwood resident, a father of two, photographer, and 
+                nature lover. He shows you his wildlife photos of bears fishing at Silverwood Creek. 
+                He is deeply suspicious about Caliente Corporation. He gives you a copy of a recent 
+                discussion on the online forum Mrs. Ratterby started in which local logger Dan Lewis 
+                and Oscar de La Hoya, Caliente Corp plant manager, also participated.
+            </p>
+            <h5 class="showSource" id="showSource3"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource3"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="source3">
+                <p>
+                    Mckenzie L, Nelson R. The forest and the sea: The salmon connection. Retrieved 2020, April 23 from http://www.encountersnorth.org/wildexplorer/salmon/forest-and-sea-salmon.html 
+                </p>
+                <p>Math Dudels (Pexels) and Brett Sayles (Pexels)</p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc3 fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/3 Home of Richard Hatton pexels-math-dudels-2294125.jpg" title="Home of Richard Hatton" 
+            alt="Home of Richard Hatton">
+        </div>
+    
+        <div class="lightboxPics loc3 fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="assets/3 Richard Hatton pexels-brett-sayles-1471204.jpg" title="Richard Hatton, Photographer" 
+            alt="Richard Hatton, Photographer">
+        </div>
+    
+        <div class="lightboxPics loc3 fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="assets/Salmon Famine 9.png" title="Recent Forum Post (2017)" alt="Recent Forum Post (2017)">
+        </div>
+
+        <div class="lightboxPics loc3 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="assets/Salmon Famine 5 Mckenzie.jpg" title="Photo Richard Hatton took in 2006" alt="Photo Richard Hatton took in 2006">
+        </div>
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides3(-1)" id=prevClueLoc3>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides3(1)" id=nextClueLoc3>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots3" onclick="currentSlide3(1)"></span>
+            <span class="dots dots3" onclick="currentSlide3(2)"></span>
+            <span class="dots dots3" onclick="currentSlide3(3)"></span>
+            <span class="dots dots3" onclick="currentSlide3(4)"></span>
+        </div>   
+    </div>
+</div>
+
+<!--LIGHTBOX4 for loc4CalienteCorp-->
+<div class="lightbox" id="lightbox4">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent4">
+        <span class="closeClues" id="closeCluesLoc4">&times;</span>
+        <div class="text">
+            <h2>At Caliente Corporation...</h2>
+            <p>
+                Oscar de la Hoya, the plant manager shows you around and tells you a little about 
+                Caliente Corporation. Founded in 2014, Caliente Corp received significant tax 
+                relief and money from the local government in order to locate their primary 
+                American operations in Silverwood and hire 80% local residents. The premises 
+                look clean, and in walking around, you don't see any immediate evidence of pollution.
+            </p>
+            <h5 class="showSource" id="showSource4"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource4"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="source4">
+                <p>Troy Squillaci (Pexels) and Joelson Melo (Pexels)</p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc4 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/4 Caliente Corp pexels-troy-squillaci-2516588.jpg" title="Caliente Corporation" 
+            alt="Caliente Corporation">
+        </div>
+    
+        <div class="lightboxPics loc4 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/4 Oscar de la Hoya pexels-joelson-melo-50855.jpg" title="Oscar de la Hoya" 
+            alt="Oscar de la Hoya">
+        </div>
+    
+        <div class="lightboxPics loc4 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/InkedSalmon Famine 11_LI.jpg" title="Ribbon Cutting Poster for Caliente Corp" alt="Ribbon Cutting Poster for Caliente Corp">
+        </div>
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides4(-1)" id=prevClueLoc4>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides4(1)" id=nextClueLoc4>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots4" onclick="currentSlide4(1)"></span>
+            <span class="dots dots4" onclick="currentSlide4(2)"></span>
+            <span class="dots dots4" onclick="currentSlide4(3)"></span>
+        </div>   
+    </div>
+</div>
+
+
+<!--LIGHTBOX5 for loc5EPA-->
+<div class="lightbox" id="lightbox5">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent5">
+        <span class="closeClues" id="closeCluesLoc5">&times;</span>
+        <div class="text">
+            <h2>At the Environmental Protection Agency...</h2>
+            <p>
+                The local department has data on the health of Silverwood Creek's water 
+                over recent decades. You ask Sara Smallfoot, the agent who brought you 
+                the report, to help you interpret the data. She explains: 
+            </p>
+            <p>
+                "Cooler, faster moving water holds more dissolved gases. When water 
+                sits in the sunshine for longer, the temperature goes up, and gases can 
+                escape. Animals need oxygen to breathe, so high amounts of dissolved 
+                oxygen is a good sign for creek health. However, high dissolved nitrogen 
+                typically comes from pollution, and is usually a bad sign for streams 
+                like Silverwood Creek."  
+            </p>
+            <h5 class="showSource" id="showSource5"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource5"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="source5">
+                <p>Mirco Ian Millar (Pexels) and Pixabay</p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc5 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/5 EPA Lab pexels-pixabay-248152.jpg" title="Inside the EPA's Lab" 
+            alt="Inside the EPA's Lab">
+        </div>
+    
+        <div class="lightboxPics loc5 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/5 Sara Smallfoot pexels-mirco-ian-millar-1440399.jpg" title="Sara Smallfoot" 
+            alt="Sara Smallfoot">
+        </div>
+    
+        <div class="lightboxPics loc5 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/Salmon Famine 2.png" title="Average Water Quality Results for Silverwood Creek" alt="Average Water Quality Results for Silverwood Creek">
+        </div>
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides5(-1)" id=prevClueLoc5>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides5(1)" id=nextClueLoc5>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots5" onclick="currentSlide5(1)"></span>
+            <span class="dots dots5" onclick="currentSlide5(2)"></span>
+            <span class="dots dots5" onclick="currentSlide5(3)"></span>
+        </div>   
+    </div>
+</div>
+
+<!--LIGHTBOX6 for loc6LorraineHadwick-->
+<div class="lightbox" id="lightbox6">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent6">
+        <span class="closeClues" id="closeCluesLoc6">&times;</span>
+        <div class="text">
+            <h2>At the Home of Lorraine Hadwick...</h2>
+            <p>
+                Lorraine Hadwick is the widow of the late Martin Hadwick. 
+                She's a passionate fundraiser and a very fast talker. After the death 
+                of her husband, she started an organization called Bear Scare. 
+                She gives you a flyer explaining their mission, and demonstrates 
+                some of the equipment that they use to keep bears away from Silverwood 
+                Creek, including a device that makes very loud sounds too high-pitched 
+                for humans to hear. "A few guys were upset in 2006 when we first got  
+                the equipment up--they tried to bring their dogs fishing, and the dogs 
+                whined and wouldn't leave  the truck! But I told them that just proves 
+                that what we're doing will work. And they sure changed their tune when 
+                they saw how much more salmon they were able to get! I know Martin would 
+                be so proud of what we've accomplished."
+            </p>
+            <h5 class="showSource" id="showSource6"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource6"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="source6">
+                <p>Matthis Volquardsen (Pexels) and Artem Beliaikin (Pexels)</p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc6 fade">
+            <div class="numbertext">1 / 4</div>
+            <img src="assets/6 Home of Lorraine pexels-matthis-volquardsen-2326926.jpg" title="Home of Lorraine Hadwick" 
+            alt="Home of Lorraine Hadwick">
+        </div>
+    
+        <div class="lightboxPics loc6 fade">
+            <div class="numbertext">2 / 4</div>
+            <img src="assets/6 Lorraine Hadwick-artem-beliaikin-1322498.jpg" title="Lorraine Hadwick" 
+            alt="Lorraine Hadwick">
+        </div>
+    
+        <div class="lightboxPics loc6 fade">
+            <div class="numbertext">3 / 4</div>
+            <img src="assets/6 Royal-Garden-Ultrasonic-Pest-Repeller.jpg" title="Ultrasonic Bear Repelling Device" alt="Ultrasonic Bear Repelling Device">
+        </div>
+
+        <div class="lightboxPics loc6 fade">
+            <div class="numbertext">4 / 4</div>
+            <img src="assets/BearScare.png" title="Bear Scare Program Promotional Postcard" alt="Bear Scare Program Promotional Postcard">
+        </div>
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides6(-1)" id=prevClueLoc6>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides6(1)" id=nextClueLoc6>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots6" onclick="currentSlide6(1)"></span>
+            <span class="dots dots6" onclick="currentSlide6(2)"></span>
+            <span class="dots dots6" onclick="currentSlide6(3)"></span>
+            <span class="dots dots6" onclick="currentSlide6(4)"></span>
+        </div>   
+    </div>
+</div>
+
+<!--LIGHTBOX7 for loc7DanLewis-->
+<div class="lightbox" id="lightbox7">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent7">
+        <span class="closeClues" id="closeCluesLoc7">&times;</span>
+        <div class="text">
+            <h2>At the Home of Dan Lewis...</h2>
+            <p>
+                Dan Lewis, owner of ABC Logging Company for 25 years, isn't much of a talker. 
+                He seems much more comfortable among the trees and his tools than in the company 
+                of a detective. As a hobbyist fisherman living on the banks of Silverwood Creek, 
+                he has observed the declining salmon runs firsthand, but he says that he's also 
+                concerned about the health of the trees around the creek. "They just not thriving 
+                like they was," he says, gruffly when you ask for more details.
+            </p>       
+                "Hey, uh, I don't know what more to tell ya, but my mother-in-law sent me this 
+                clipping from a magazine she was reading--I think it's about salmon. Maybe it will 
+                be useful to you?" He's clearly trying to get rid of you, but you take the 
+                magazine article and politely skim through it. Surprisingly, it looks like it 
+                might be useful after all! Dan also suggests that you talk to a community organizer 
+                and bed and breakfast owner named Bea Tartan. "She always knows what's going on and 
+                she's real invested in having a healthy stream for the tourists, you know. 
+                Plus, she likes talkin' to folks from out of town.
+            </p>
+            <h5 class="showSource" id="showSource7"><a href="">(Show Image/Text Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource7"><a href="">(Collapse Image/Text Credits)</a></h5>
+            <div class="source"; id="source7">
+                <p>Karolina Grabowska (Pexels)</p>
+                <p>Mckenzie L, Nelson R. The forest and the sea: The salmon connection. 
+                    Retrieved 2020, April 23 from 
+                    https://www.encountersnorth.org/ak-wild-salmon-summary/2017/8/2/forest-and-sea-the-salmon-connection
+                </p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc7 fade">
+            <div class="numbertext">1 / 2</div>
+            <img src="assets/7 Dan Lewis pexels-karolina-grabowska-4206047.jpg" title="Home of Dan Lewis" 
+            alt="Home of Dan Lewis">
+        </div>
+    
+        <div class="lightboxPics loc7 fade">
+            <div class="numbertext">2 / 2</div>
+            <img src="assets/Salmon Famine 7 Mckenzie.png" title="Magazine Article About Salmon, Trees and Bears" 
+            alt="Magazine Article About Salmon, Trees and Bears">
+        </div>
+    
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides7(-1)" id=prevClueLoc7>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides7(1)" id=nextClueLoc7>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots7" onclick="currentSlide7(1)"></span>
+            <span class="dots dots7" onclick="currentSlide7(2)"></span>
+        </div>   
+    </div>
+</div>
+
+<!--LIGHTBOX8 for loc8DanLewis-->
+<div class="lightbox" id="lightbox8">
+    <!--Lightbox Contents-->
+    <div class="lightboxContent" id="lightboxContent8">
+        <span class="closeClues" id="closeCluesLoc8">&times;</span>
+        <div class="text">
+            <h2>At the Cottage of Bea Tartan...</h2>
+            <p>
+                When you walk up the lane to Bea Tartan's lovely cottage that she rents 
+                as a Bed and Breakfast, you can't help noticing how tidy everything looks. 
+                Not a flower petal, blade of grass or speck of mulch is out of place.
+            </p>
+            <p>    
+                Bea greets you at the door of her cottage with a cup of tea and a giant blueberry 
+                muffin. She introduces herself as the current Vice President (and former 
+                president) of the Silverwood Beautification Committee. "Silverwood has the 
+                potential to be THE vacation destination of the Pacific Northwest, but to 
+                earn that spot, we really need to be picture-perfect in every way. I led 
+                the committee in a massive clean-up effort of Silverwood Creek three years 
+                ago... I guess that was 2014. We got volunteers from all over the community 
+                to help clear unsightly logs and fallen branches and smooth the gravel to 
+                provide accessible beauty for everyone. We removed some dying trees, and 
+                of course we got rid of any litter that we found too. There was suddenly 
+                so much more space along the riverbanks for picnics and family reunions and 
+                photos. So many more people visited Silverwood after that, from all over the 
+                country! Gina Starr is doing advocacy work at State right now, but she wanted 
+                me to give you this." 
+            </p>
+            <p>    
+                She gives you a flyer from the time advertising the event, along with a 
+                note from the current committee president. "Gina wanted me to give you this. 
+                She doesn't think we need another clean up, and it's true that the stream is 
+                still looking fairly neat, but of course, every year, we get more leaves and 
+                twigs and muck cluttering the stream bed. In my opinion, the salmon are telling 
+                us its time for another clean up!"
+            </p>       
+            <h5 class="showSource" id="showSource8"><a href="">(Show Image Credits)</a></h5>
+            <h5 class="collapseSource" id="collapseSource8"><a href="">(Collapse Image Credits)</a></h5>
+            <div class="source"; id="source8">
+                <p>Image Credits: George Harrell (Pexels) and Maria Orlova (Pexels)</p>
+            </div>
+        </div>
+
+        <!--Clue Pictures inside the lightbox-->
+      
+        <div class="lightboxPics loc8 fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="assets/8 Home of Bea Tartan pexels-maria-orlova-4946730.jpg" title="Cottage of Bea Tartan" 
+            alt="Cottage of Bea Tartan">
+        </div>
+    
+        <div class="lightboxPics loc8 fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="assets/8 Bea Tartan pexels-george-harrell-4047482.jpg" title="Bea Tartan" 
+            alt="Bea Tartan">
+        </div>
+    
+        <div class="lightboxPics loc8 fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="assets/InkedSalmon Famine 14_LI.jpg" title="Stream Clean-Up Celebration Poster" 
+            alt="Stream Clean-Up Celebration Poster">
+        </div>
+
+        <!--Previous < and Next > buttons on pictures--> 
+        <div>
+            <span class="prevClue" onclick="plusSlides8(-1)" id=prevClueLoc8>&#10094;</span>
+            <span class="nextClue" onclick="plusSlides8(1)" id=nextClueLoc8>&#10095;</span>
+        </div>
+        <br>
+        
+
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dots dots8" onclick="currentSlide8(1)"></span>
+            <span class="dots dots8" onclick="currentSlide8(2)"></span>
+            <span class="dots dots8" onclick="currentSlide8(3)"></span>
+        </div>   
+    </div>
+</div>
 
     <footer>
         <h3>Copyright Heather Cole, 2021</h3>
