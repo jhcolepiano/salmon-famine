@@ -2,9 +2,9 @@
 
 -Clues:
 	-clicking greyed out portion escapes the lightbox
-	-add reminder about clues added to your map
 -Nav:
 	-tabs for the standards, disclaimer and directions?
+
 -Resolve cookies alerts:
 	-"Access to XMLHttpRequest at 
 	'https://googleads.g.doubleclick.net/pagead/id' from origin 
@@ -15,10 +15,6 @@
 -UX: 
 	-Make H3 of Clue div show up at the same Y as the submit button (use getBoundingClientRect());
 	-Toggle buttons to display Objective, Standards, Disclaimer and Directions;
--Photos:
-	-pretty background (animated stream like on Google Forms?);
-	-photos to go with questions; 
-	-photos to go with clues; 
 -Get feedback, usability testing;
 -Intro:
 	-video? voice-over? text?;
