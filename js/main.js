@@ -1,3 +1,26 @@
+//expand objective:
+const expandobjective = document.getElementById("expandObjective");
+const collapseObjective = document.getElementById("collapseObjective");
+
+let onExpandObjectiveClick = function(e) {
+    e.preventDefault();
+    document.getElementById("objective").style.display = "block";
+    collapseObjective.style.display = "block";
+    expandObjective.style.display = "none";
+};
+
+expandObjective.addEventListener("click", onExpandObjectiveClick, false);
+
+//collapse objective:
+let onCollapseObjectiveClick = function(e) {
+    e.preventDefault();
+    document.getElementById("objective").style.display = "none";
+    collapseObjective.style.display = "none";
+    expandObjective.style.display = "block";
+};
+
+collapseObjective.addEventListener("click", onCollapseObjectiveClick, false);
+
 //expand standards:
 const expandStandards = document.getElementById("expandStandards");
 const collapseStandards = document.getElementById("collapseStandards");
