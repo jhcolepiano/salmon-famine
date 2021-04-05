@@ -1099,8 +1099,8 @@ let onQ9ButtonClick = function(e) {
         display solution, hide question and remove event listener for the button:*/
     } else if (answer9[1].checked && answer9[2].checked && mysteryExplanation.length > 60) {
         alert("You did it!");
-        e.preventDefault();  //******CONSIDER REPLACING THIS TO SEND FINAL ANSWER SOMEWHERE******
-        document.getElementById('solutionContainer').style.display = "block";
+        e.preventDefault();  
+        document.getElementById('solutionContainerCorrect').style.display = "block";
         document.getElementById('q9Container').style.display = "none";
         q9Button.removeEventListener("click", onQ9ButtonClick, false);
         showSolutionButton.removeEventListener("click", onShowSolutionClick, false);
@@ -1142,8 +1142,8 @@ q9Button.addEventListener("click", onQ9ButtonClick, false);
 /*show solution button to see solution video if user didn't get the answer correct
 (give user control over whether to keep trying):*/
 let onShowSolutionClick = function () {
-    document.getElementById('solutionContainer').style.display = "block";
-    document.getElementById('q9Container').style.display = "none";
+    document.getElementById('solutionContainerIncorrect').style.display = "block";
+    showSolutionButton.style.display = "none";
     showSolutionButton.removeEventListener("click", onShowSolutionClick, false);
 }
 
