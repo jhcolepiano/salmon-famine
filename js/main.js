@@ -85,7 +85,8 @@ let closeCluesLocA = document.getElementById("closeCluesLocA");
 
 let onCloseCluesAClick = function(e) {
     e.preventDefault();
-    document.getElementById('lightboxA').style.display = "none";  
+    document.getElementById('lightboxA').style.display = "none";
+    document.getElementById('directions').style.display = "none"  
 }
 
 closeCluesLocA.addEventListener("click", onCloseCluesAClick, false);
@@ -767,7 +768,8 @@ let loc8BeaTartan = document.getElementById("loc8BeaTartan");
 
 let onBeaTartanClick = function(e) {
     e.preventDefault();
-    document.getElementById('level9Heading').style.display = "block";
+    /*document.getElementById('level9Heading').style.display = "block";
+    alert("hey!");*/
     document.getElementById('q9Container').style.display = "block";
     document.getElementById('lightbox8').style.display = "block";
 }
@@ -1135,6 +1137,7 @@ let onQ9ButtonClick = function(e) {
     
     //unless there are exactly two boxes checked, alert user to select 2 answers:
     if (numberOfSuspectsChecked > 2 || numberOfSuspectsChecked <= 1 ) {
+        e.preventDefault();
         alert("Please select two primary suspects.");
         console.log("Correct answer 1 checked? " + answer9[1].checked + ' Correct answer 2 checked? ' + answer9[2].checked);
         return false;
@@ -1142,6 +1145,7 @@ let onQ9ButtonClick = function(e) {
         /*If both checked answers are correct, but the text area response is too short,
          request more explanation:*/
     } else if (answer9[1].checked && answer9[2].checked && !(mysteryExplanation.length > 60)) {
+        e.preventDefault();
         alert("You answered correctly! But can you please explain your answer a little more?");
         return false;
 
@@ -1152,6 +1156,7 @@ let onQ9ButtonClick = function(e) {
         e.preventDefault();  
         document.getElementById('solutionContainerCorrect').style.display = "block";
         document.getElementById('q9Container').style.display = "none";
+        document.getElementById('solutionContainerIncorrect').style.display = "none";
         q9Button.removeEventListener("click", onQ9ButtonClick, false);
         showSolutionButton.removeEventListener("click", onShowSolutionClick, false);
         return true;

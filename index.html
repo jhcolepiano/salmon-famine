@@ -50,9 +50,7 @@
         
         </ul>    
     </div>
-
-    <!--Mystery description-->
-    <div class="directions">
+    <div class="standards">
         <h4 id="collapseDisclaimer"><a href="">Disclaimer (Collapse)</a></h4>
         <h4 id="expandDisclaimer"><a href="">Disclaimer (Expand)</a></h4>
         <p id="disclaimer"> This form and all associated materials constitute a work of fiction produced 
@@ -63,6 +61,10 @@
             accordance with "fair use." If you wish to use these materials for purposes which 
             go beyond fair use, you will need to ask permission of the copyright owner.
         </p>        
+    </div>    
+
+    <!--Mystery description-->
+    <div class="directions" id="directions"> 
         <h2>Directions</h2>
         <p>Solving these riddles correctly will earn you more clues on your map to help solve the case
             of the salmon famine! The answers to the riddles themselves are clues in their own way! 
@@ -71,7 +73,6 @@
         <p>
             <strong>Click "City Hall"</strong> on the map below to begin.
         </p>
-
     </div> 
   
     <!--question 1-->
@@ -442,6 +443,15 @@
         <br>
     </div>
 
+    <!--Solution Video (Incorrect: Displays if "Show Solution" Clicked in the next section)-->
+    <div class="clue fade" id="solutionContainerIncorrect">
+        <h3>Here's how we solved the case!</h3>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XlTYwRn7_c8" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="tip">Video not loading? Navigate here
+            to watch the video on <a href="https://youtu.be/XlTYwRn7_c8" target=" ">Youtube</a>.</p>
+    </div>
+
         <!--Solving the mystery; shows up after all clues are earned-->
         <div class="question fade" id="q9Container">
             <h2>Solving the Mystery...</h2>
@@ -481,7 +491,28 @@
             <br>
         </div>
 
-    <!--Navigation: Map with key locations marked. Links to each question added through 
+    <!--Solution Video: Correct!-->
+    <div class="clue fade" id="solutionContainerCorrect">
+        <h3>Congratulations!</h3>
+        <p>
+            You solved the case of the Salmon Famine! 
+        </p>
+        <p>
+            "You helped us see that humans rely on fish, which rely on trees, which rely on bears, which rely on 
+            fish," Mayor Blackston says. "We'd like to build a monument in your honor! Here's what it will look like!"
+        </p>
+        <img src="assets/BearTreeFish Statue.png" Title="The Bear Tree Fish statue to be built in your honor!" 
+        alt="The Bear Tree Fish statue to be built in your honor!">
+        <h3>Here's how we solved the case!</h3>
+        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XlTYwRn7_c8" frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <p class="tip">Video not loading? Navigate here
+            to watch the video on <a href="https://youtu.be/XlTYwRn7_c8" target=" ">Youtube</a>.</p>
+
+    </div>
+
+
+        <!--Navigation: Map with key locations marked. Links to each question added through 
         javascript (and lock images removed) once the previous level has been solved-->
         <div class=map id=mapHeading>
             <h2>MAP:</h2>
@@ -524,34 +555,7 @@
         <br>
         <br>    
 
-    <!--Solution Video-->
-    <div class="clue fade" id="solutionContainerCorrect">
-        <h3>Congratulations!</h3>
-        <p>
-            You solved the case of the Salmon Famine! 
-        </p>
-        <p>
-            "You helped us see that humans rely on fish, which rely on trees, which rely on bears, which rely on 
-            fish," Mayor Blackston says. "We'd like to build a monument in your honor! Here's what it will look like!"
-        </p>
-        <img src="assets/BearTreeFish Statue.png" Title="The Bear Tree Fish statue to be built in your honor!" 
-        alt="The Bear Tree Fish statue to be built in your honor!">
-        <h3>Here's how we solved the case!</h3>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XlTYwRn7_c8" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p class="tip">Video not loading? Navigate here
-            to watch the video on <a href="https://youtu.be/XlTYwRn7_c8" target=" ">Youtube</a>.</p>
-
-    </div>
-
-    <div class="clue fade" id="solutionContainerIncorrect">
-        <h3>Here's how we solved the case!</h3>
-        <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/XlTYwRn7_c8" frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <p class="tip">Video not loading? Navigate here
-            to watch the video on <a href="https://youtu.be/XlTYwRn7_c8" target=" ">Youtube</a>.</p>
-
-    </div>
+    
 
 <!--LIGHTBOXA for locACityHall-->
 <div class="lightbox" id="lightboxA">
