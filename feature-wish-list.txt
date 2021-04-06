@@ -1,17 +1,13 @@
 ***Prioritized Feature List for Case of the Salmon Famine*** 
 
--Clues:
-	
 -Nav:
 	-tabs for the standards, disclaimer and directions?
-
 -Resolve cookies alerts:
 	-"Access to XMLHttpRequest at 
 	'https://googleads.g.doubleclick.net/pagead/id' from origin 
 	'https://www.youtube-nocookie.com' has been blocked by CORS policy: 
 	No 'Access-Control-Allow-Origin' header is present on the requested resource."; 
 	-"Failed to load resource: net::ERR_FAILED (googleads.g.doubleclick.net/pagead/id:1)"; 
--Feedback button for users to identify bugs and suggest new features;
 -UX: 
 	-Make H3 of Clue div show up at the same Y as the submit button (use getBoundingClientRect());
 	-Toggle buttons to display Objective, Standards, Disclaimer and Directions;
